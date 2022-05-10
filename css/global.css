@@ -49,7 +49,7 @@ ul {
 a {
     text-decoration: none;
 }
-h2 {
+h1, h2 {
     font-family: "Oswald-Bold";
     font-size: 1.5rem;
     color: #FF5900;
@@ -92,6 +92,11 @@ h3 {
     font-size: 0.75rem;
     text-transform: uppercase;
     padding: 0.4rem 1.3rem;
+}
+.button5 {
+    width: 100%;
+    background-color: #4E4F5D;
+    text-transform: uppercase;
 }
 .bullets {
     position: absolute;
@@ -299,7 +304,58 @@ footer li a {
 .address p:first-of-type {
     font-family: "WSans-SBold";
 }
-
+.fichaSlider {
+    background-color: #0944E1;
+    padding: 1rem 2rem 0;
+    position: relative;
+}
+.fichaSlider .prev, .fichaSlider .next {
+    display: none;
+}
+.fichaText {
+    margin: 1.5rem 0;
+    width: 90%;
+}
+.fichamark {
+    background-color: #FFC400;
+    width: fit-content;
+    padding: 0.4rem 1.2rem;
+    border-radius: 8px 8px 8px 0;
+    font-family: "Oswald-Bold";
+    font-size: 0.875rem;
+    color: #0944E1;
+}
+.fichaText h2 {
+    color: #fff;
+}
+.fichaText p:last-of-type {
+    color: #fff;
+    font-family: "WSans-light";
+    margin: 0.5rem 0 1rem;
+}
+.fichaSlider .pag {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+.fichaSlider .pag .bullets {
+    position: unset;
+    width: auto;
+    align-items: center;
+    gap: 0.5rem;
+}
+.fichaSlider .pag > div:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0.5rem;
+}
+.fichaSlider .pag img {
+    width: 30%;
+}
+.fichaSlider .pag img:last-of-type {
+    transform: rotateY(180deg);
+}
 
 @media screen and (min-width: 420px) {
     .logos img {
@@ -461,6 +517,41 @@ footer li a {
         font-size: 1rem;
         margin-top: 1.5rem;
     }
+    .fichaSlider {
+        padding-top: 3rem;
+        position: relative;
+    }
+    .fichaSliderSingle {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .fichaSliderSingle picture {
+        width: 50%;
+    }
+    .fichaText {
+        margin: 0;
+        width: 50%;
+    }
+    p.fichamark {
+        font-size: 1.125rem;
+        padding: 0.2rem 1.5rem;
+    }
+    .fichaText p:last-of-type {
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+    }
+    .fichaText a {
+        padding: 0.4rem 2rem;
+        font-size: 0.875rem;
+    }
+    .fichaSlider .pag {
+        margin: 1rem auto 0;
+        width: 80%;
+    }
+    .fichaSlider .pag img {
+        width: 40%;
+    }
 }
 @media screen and (min-width: 1112px) {
     h2 {
@@ -527,6 +618,23 @@ footer li a {
     }
     .legal {
         text-align: left;
+    }
+    .fichaSlider > div:first-of-type {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 3rem;
+    }
+    .fichaSlider .prev, .fichaSlider .next {
+        display: block;
+    }
+    .fichaSlider .pag {
+        justify-content: center;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .fichaSlider .pag > div:last-of-type {
+        display: none;
     }
 }
 
