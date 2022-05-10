@@ -1,0 +1,202 @@
+.plainSlider {
+    background-color: #FFC400;
+    padding: 2rem 0;
+}
+.plainSliderMain {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+.plainSliderCards {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 16rem;
+    overflow: hidden;
+}
+.plainSliderCardSingle {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0.5rem;
+    text-align: center;
+    min-width: 4rem;
+    min-height: 5rem;
+}
+.plainSliderCardSingle img {
+    width: 80%;
+}
+.plainSliderCardSingle p {
+    font-family: "Oswald-Bold";
+    font-size: 0.687rem;
+    color: #FF5900;
+    margin-top: 0.5rem;
+}
+.plainSliderMain .prev {
+    position: absolute;
+    left: 0;
+}
+.plainSliderMain .next {
+    transform: rotateY(180deg);
+    position: absolute;
+    right: 0;
+}
+.plainSliderMain .prev img, .plainSliderMain .next img {
+    width: 70%;
+}
+.fichaSlider {
+    background-color: #0944E1;
+    padding: 1rem 2rem 0;
+    position: relative;
+}
+.fichaSlider .prev, .fichaSlider .next {
+    display: none;
+}
+.fichaText {
+    margin: 1.5rem 0;
+    width: 90%;
+}
+.fichamark {
+    background-color: #FFC400;
+    width: fit-content;
+    padding: 0.4rem 1.2rem;
+    border-radius: 8px 8px 8px 0;
+    font-family: "Oswald-Bold";
+    font-size: 0.875rem;
+    color: #0944E1;
+}
+.fichaText h2 {
+    color: #fff;
+}
+.fichaText p:last-of-type {
+    color: #fff;
+    font-family: "WSans-light";
+    margin: 0.5rem 0 1rem;
+}
+.pag {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+.pag .bullets {
+    position: unset;
+    width: auto;
+    align-items: center;
+    gap: 0.5rem;
+}
+.pag > div:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0.5rem;
+}
+.pag img {
+    width: 30%;
+}
+
+@media screen and (min-width: 420px) {
+    .plainSliderCards {
+        max-width: 22rem;
+    }
+    .plainSliderCardSingle {
+        min-width: 6rem;
+    }
+}
+@media screen and (min-width: 520px) {
+    .plainSliderMain .prev, .plainSliderMain .next {
+        position: unset;
+    }
+    .plainSliderMain .prev img, .plainSliderMain .next img {
+        width: unset;
+    }
+    .plainSliderCardSingle p {
+        font-size: 1rem;
+    }
+    .plainSliderCards {
+        max-width: 28.25rem;
+    }
+    .plainSliderCardSingle {
+        min-width: 8rem;
+    }
+}
+@media screen and (min-width: 680px) {
+    .fichaSlider {
+        padding-top: 3rem;
+        position: relative;
+    }
+    .fichaSliderSingle {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .fichaSliderSingle picture {
+        width: 50%;
+    }
+    .fichaText {
+        margin: 0;
+        width: 50%;
+    }
+    p.fichamark {
+        font-size: 1.125rem;
+        padding: 0.2rem 1.5rem;
+    }
+    .fichaText p:last-of-type {
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+    }
+    .fichaText a {
+        padding: 0.4rem 2rem;
+        font-size: 0.875rem;
+    }
+    .pag {
+        margin: 1rem auto 0;
+        width: 80%;
+    }
+    .pag img {
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1112px) {
+    .plainSlider {
+        padding: 4rem 0;
+    }
+    .plainSliderCards {
+        max-width: unset;
+    }
+    .plainSliderCardSingle {
+        min-width: 8rem;
+    }
+    .plainSliderCardSingle img {
+        width: auto;
+    }
+    .fichaSlider > div:first-of-type {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 3rem;
+    }
+    .fichaSlider .prev, .fichaSlider .next {
+        display: block;
+    }
+    .fichaSlider .next {
+        transform: rotateY(180deg);
+    }
+    .pag {
+        justify-content: center;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .pag > div:last-of-type {
+        display: none;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .plainSliderCardSingle {
+        min-width: 10rem;
+    }
+}
