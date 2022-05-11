@@ -426,6 +426,11 @@ footer li a {
     }
     .headerLast {
         padding: 0 0.7rem;
+        background-color: unset;
+    }
+    .menu {
+        padding: 1rem 0;
+        margin: 0 2rem;
     }
     .session {
         align-self: auto;
@@ -644,5 +649,8 @@ footer li a {
         margin-left: auto;
         margin-right: auto;
         padding: 0;
+    }
+    .menu {
+        margin: 0;
     }
 }
