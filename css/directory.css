@@ -2,6 +2,7 @@
     background-color: #FFC400;
     padding: 2rem 0;
 }
+
 .plainSliderMain {
     display: flex;
     width: 100%;
@@ -13,6 +14,7 @@
     overflow: hidden;
     position: relative;
 }
+
 .plainSliderCards {
     display: flex;
     align-items: center;
@@ -20,6 +22,7 @@
     max-width: 16rem;
     overflow: hidden;
 }
+
 .plainSliderCardSingle {
     background-color: #fff;
     border-radius: 20px;
@@ -28,49 +31,81 @@
     min-width: 4rem;
     min-height: 5rem;
 }
+
 .plainSliderCardSingle img {
     width: 80%;
 }
+
 .plainSliderCardSingle p {
     font-family: "Oswald-Bold";
     font-size: 0.687rem;
     color: #FF5900;
     margin-top: 0.5rem;
 }
+
 .plainSliderMain .prev {
     position: absolute;
     left: 0;
 }
+
 .plainSliderMain .next {
     transform: rotateY(180deg);
     position: absolute;
     right: 0;
 }
-.plainSliderMain .prev img, .plainSliderMain .next img {
+
+.plainSliderMain .prev img,
+.plainSliderMain .next img {
     width: 70%;
+}
+
+.sliderPrime {
+    position: relative;
+}
+
+.sliderMain {
+    overflow: hidden;
+    width: 100%;
+}
+
+.sliderGroup {
+    display: flex;
+}
+
+.sliderSingle {
+    transition: transform 0.5s ease-in;
 }
 
 @media screen and (min-width: 420px) {
     .plainSliderCards {
         max-width: 22rem;
     }
+
     .plainSliderCardSingle {
         min-width: 6rem;
     }
 }
+
 @media screen and (min-width: 520px) {
-    .plainSliderMain .prev, .plainSliderMain .next {
+
+    .plainSliderMain .prev,
+    .plainSliderMain .next {
         position: unset;
     }
-    .plainSliderMain .prev img, .plainSliderMain .next img {
+
+    .plainSliderMain .prev img,
+    .plainSliderMain .next img {
         width: unset;
     }
+
     .plainSliderCardSingle p {
         font-size: 1rem;
     }
+
     .plainSliderCards {
         max-width: 28.25rem;
     }
+
     .plainSliderCardSingle {
         min-width: 8rem;
     }
@@ -80,16 +115,42 @@
     .plainSlider {
         padding: 4rem 0;
     }
+
     .plainSliderCards {
         max-width: unset;
     }
+
     .plainSliderCardSingle {
         min-width: 8rem;
     }
+
     .plainSliderCardSingle img {
         width: auto;
     }
+
+    .sliderMain {
+        width: 85%;
+    }
+
+    .sliderPrime .prev {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .sliderPrime .next {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%) rotateY(180deg);
+        cursor: pointer;
+    }
 }
+
 @media screen and (min-width: 1280px) {
     .plainSliderCardSingle {
         min-width: 10rem;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/directory.css">
     <title>SiCultura- Directorio Cultural</title>
 </head>
+
 <body>
     <header>
         <div class="container headerFirst">
@@ -18,8 +20,8 @@
         </div>
         <div class="container headerMid">
             <div class="logos">
-                <img src="assets/repdomlogo.png" alt="Logo Ministerio de Cultura Rep.Dom.">
-                <img src="assets/siculturalogo.png" alt="Logo SiCultura">
+                <a href="#"><img src="assets/repdomlogo.png" alt="Logo Ministerio de Cultura Rep.Dom."></a>
+                <a href="index.html"><img src="assets/siculturalogo.png" alt="Logo SiCultura"></a>
             </div>
             <div class="session">
                 <a class="button" href="#">Solicitar Cuenta</a>
@@ -48,10 +50,10 @@
             <nav class="mobileNav">
                 <ul>
                     <li>
-                        <a href="#">Inicio</a>
+                        <a href="index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="#">Directorio</a>
+                        <a href="directorio.html">Directorio</a>
                     </li>
                     <li>
                         <a href="#">Mapa</a>
@@ -87,8 +89,10 @@
                 </div>
                 <form action="" class="search">
                     <div>
-                        <input type="search" name="searchDir" id="searchDir" placeholder="Buscar en el directorio cultural">
-                        <button type="submit" name="sendIcon"><img src="assets/search-icon.png" alt="search-icon"></button>
+                        <input type="search" name="searchDir" id="searchDir"
+                            placeholder="Buscar en el directorio cultural">
+                        <button type="submit" name="sendIcon"><img src="assets/search-icon.png"
+                                alt="search-icon"></button>
                     </div>
                     <button type="submit" name="snmdButton" class="button button4">Buscar</button>
                 </form>
@@ -145,6 +149,7 @@
                 </div>
             </div>
         </section>
+
         <section class="plainSlider">
             <h2 class="coloredTitle">Búsqueda por subsectores</h2>
             <div class="plainSliderMain">
@@ -183,21 +188,47 @@
             </div>
         </section>
         <section class="fichaSlider">
-            <div>
+            <div class="sliderPrime">
                 <div class="prev">
                     <img src="assets/prev.png" alt="">
                 </div>
-                <div class="fichaSliderMain">
-                    <div class="fichaSliderSingle">
-                        <picture>
-                            <source media="(min-width: 680px)" srcset="assets/ficha.jpg">
-                            <img src="assets/ficha-mob.jpg" alt="">
-                        </picture>
-                        <div class="fichaText">
-                            <p class="fichamark">Ficha destacada</p>
-                            <h2>Lorem ipsum dolor</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quo.</p>
-                            <a href="" class="button button2">Ver más</a>
+                <div class="fichaSliderMain sliderMain">
+                    <div class="fichaSlides sliderGroup">
+                        <div class="fichaSliderSingle sliderSingle">
+                            <picture>
+                                <source media="(min-width: 680px)" srcset="assets/ficha.jpg">
+                                <img src="assets/ficha-mob.jpg" alt="">
+                            </picture>
+                            <div class="fichaText">
+                                <p class="fichamark">Ficha destacada</p>
+                                <h2>Lorem ipsum dolor</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quo.</p>
+                                <a href="" class="button button2">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="fichaSliderSingle sliderSingle">
+                            <picture>
+                                <source media="(min-width: 680px)" srcset="assets/ficha.jpg">
+                                <img src="assets/ficha-mob.jpg" alt="">
+                            </picture>
+                            <div class="fichaText">
+                                <p class="fichamark">Ficha destacada</p>
+                                <h2>Lorem ipsum dolor</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quo.</p>
+                                <a href="" class="button button2">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="fichaSliderSingle sliderSingle">
+                            <picture>
+                                <source media="(min-width: 680px)" srcset="assets/ficha.jpg">
+                                <img src="assets/ficha-mob.jpg" alt="">
+                            </picture>
+                            <div class="fichaText">
+                                <p class="fichamark">Ficha destacada</p>
+                                <h2>Lorem ipsum dolor</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quo.</p>
+                                <a href="" class="button button2">Ver más</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -207,9 +238,7 @@
             </div>
             <div class="pag">
                 <div class="bullets">
-                    <div class="bullet active"></div>
-                    <div class="bullet"></div>
-                    <div class="bullet"></div>
+
                 </div>
                 <div>
                     <img src="assets/prev-white.png" alt="">
@@ -217,13 +246,16 @@
                 </div>
             </div>
         </section>
+
     </main>
     <footer class="container footer">
         <div>
-            <picture class="footerLogo">
-                <source media="(min-width: 1112px)" srcset="assets/siculturafooter.png">
-                <img src="assets/statistics-icon.png" alt="statistics-icon" id>
-            </picture>
+            <a href="index.html">
+                <picture class="footerLogo">
+                    <source media="(min-width: 1112px)" srcset="assets/siculturafooter.png">
+                    <img src="assets/statistics-icon.png" alt="statistics-icon" id>
+                </picture>
+            </a>
             <nav>
                 <ul>
                     <li>
@@ -275,5 +307,8 @@
             <p>Ciudad de Panamá</p>
         </div>
     </footer>
+    <script src="js/global.js"></script>
+    <script src="js/slider.js"></script>
 </body>
+
 </html>

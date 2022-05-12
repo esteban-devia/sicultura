@@ -2,72 +2,93 @@
     font-family: "WSans-light";
     src: url(fonts/WorkSans-Light.ttf);
 }
+
 @font-face {
     font-family: "WSans-Regular";
     src: url(fonts/WorkSans-Regular.ttf);
 }
+
 @font-face {
     font-family: "WSans-Medium";
     src: url(fonts/WorkSans-Medium.ttf);
 }
+
 @font-face {
     font-family: "WSans-SBold";
     src: url(fonts/WorkSans-SemiBold.ttf);
 }
+
 @font-face {
     font-family: "WSans-Bold";
     src: url(fonts/WorkSans-Bold.ttf);
 }
+
 @font-face {
     font-family: "Oswald-Light";
     src: url(fonts/Oswald-Light.ttf);
 }
+
 @font-face {
     font-family: "Oswald-Regular";
     src: url(fonts/Oswald-Regular.ttf);
 }
+
 @font-face {
     font-family: "Oswald-Bold";
     src: url(fonts/Oswald-Bold.ttf);
 }
+
 @font-face {
     font-family: "Montserrat-Regular";
     src: url(fonts/Montserrat-Regular.ttf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
+
 ul {
     list-style: none;
 }
+
 a {
     text-decoration: none;
 }
-h1, h2 {
+
+h1,
+h2 {
     font-family: "Oswald-Bold";
     font-size: 1.5rem;
     color: #FF5900;
 }
+
 h3 {
     font-family: "WSans-Bold";
     font-size: 0.87rem;
     color: #FF5900;
 }
+
+button {
+    cursor: pointer;
+}
+
 .coloredTitle {
-    color: #0844E1; 
+    color: #0844E1;
     margin-bottom: 1rem;
     text-align: center;
 }
+
 .container {
     padding: 0 2rem;
     margin-top: 2rem;
 }
+
 .button {
     text-decoration: none;
     padding: 0.4rem 0.5rem;
@@ -77,27 +98,33 @@ h3 {
     background-color: #FF5900;
     border-radius: 20px 20px 20px 0;
     border: none;
+    cursor: pointer;
 }
+
 .button2 {
     text-transform: uppercase;
     font-family: "WSans-Medium";
     padding: 0.4rem 1.3rem;
 }
+
 .button3 {
     font-family: "WSans-Light";
     font-size: 0.5rem;
     text-transform: uppercase;
 }
+
 .button4 {
     font-size: 0.75rem;
     text-transform: uppercase;
     padding: 0.4rem 1.3rem;
 }
+
 .button5 {
     width: 100%;
     background-color: #4E4F5D;
     text-transform: uppercase;
 }
+
 .bullets {
     position: absolute;
     bottom: 1.5rem;
@@ -106,36 +133,44 @@ h3 {
     justify-content: center;
     gap: 1rem;
 }
+
 .bullet {
     width: 8px;
     height: 8px;
     border-radius: 50%;
     background-color: #fff;
 }
+
 .bullet.active {
     background-color: #FF5900;
 }
+
 .headerFirst {
     display: none;
 }
+
 .headerMid {
     max-width: 100vw;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
+
 .logos {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
 }
+
 .logos img {
     max-width: 50%;
 }
+
 .session {
     align-self: flex-end;
 }
+
 .session a:last-of-type {
     text-decoration: none;
     font-family: "WSans-Regular";
@@ -143,32 +178,41 @@ h3 {
     color: #5B7ECF;
     margin-left: 0.5rem;
 }
+
 .headerLast {
     background-color: #F4F9F9;
     position: relative;
     margin-top: 1.5rem;
 }
+
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
+
 .menu div:first-of-type {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
+
 .deskMenu {
     display: none;
 }
+
 .menu p {
     font-family: "Oswald-Regular";
     font-size: 1.1rem;
 }
-.search div{
+
+.search div {
     position: relative;
 }
+
 .search input {
     border: none;
     border-radius: 20px;
@@ -177,6 +221,7 @@ h3 {
     padding-right: 2rem;
     font-family: "WSans-Light";
 }
+
 .search div button {
     position: absolute;
     top: 0px;
@@ -186,12 +231,15 @@ h3 {
     border: none;
     background-color: transparent;
 }
+
 .search img {
     max-width: 80%;
 }
-.search > button {
+
+.search>button {
     display: none;
 }
+
 .mobileNav {
     display: none;
     position: absolute;
@@ -201,9 +249,15 @@ h3 {
     border-top: 1px solid rgba(112, 112, 112, 0.122);
     z-index: 1;
 }
+
+.mobileNav.active {
+    display: block;
+}
+
 .mobileNav li {
     margin-bottom: 1rem;
 }
+
 .mobileNav a {
     padding-left: 1.8rem;
     font-family: "Oswald-Regular";
@@ -211,49 +265,60 @@ h3 {
     text-transform: uppercase;
     color: #000;
 }
+
 .dirText p {
     margin: 1rem 0;
     font-family: "WSans-Regular";
     line-height: 1.5;
 }
+
 .directory .search input {
     width: 100%;
 }
-.directory > div:last-of-type {
+
+.directory>div:last-of-type {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.directory > div:last-of-type button {
+
+.directory>div:last-of-type button {
     font-size: 0.87rem;
 }
+
 .dirCount {
     font-size: 1.1rem;
     margin: 1.2rem 0;
     text-align: right;
 }
+
 .dirCount p {
     font-family: "WSans-Light";
     color: #707070;
 }
+
 .dirCount p:first-of-type {
     font-family: "WSans-Bold";
     color: #FF5900;
 }
+
 .dirCards {
     max-width: 680px;
     margin: auto;
 }
-.dirCards > div {
+
+.dirCards>div {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     gap: 1rem;
     margin-bottom: 2rem;
 }
-.dirCards > div:first-of-type .dirCardSingle {
+
+.dirCards>div:first-of-type .dirCardSingle {
     max-width: 8rem;
 }
+
 .dirCardSingle {
     text-align: center;
     min-height: 10rem;
@@ -261,61 +326,77 @@ h3 {
     flex-direction: column;
     align-items: center;
 }
+
 .dirCardText {
     display: flex;
     flex-direction: column;
     min-height: 6rem;
     justify-content: space-between;
 }
+
 .dirCardSingle p {
     margin: 1rem 0;
     font-family: "WSans-Light";
     font-size: 0.75rem;
 }
+
 .container.footer {
     text-align: center;
     padding: 1rem 0;
 }
+
 .footerLogo img {
     width: 3.5rem;
 }
+
 footer nav {
     margin: 1.5rem 0;
 }
+
 footer li {
     margin-bottom: 1rem;
 }
+
 footer li a {
     font-family: "Oswald-Light";
     font-size: 0.87rem;
     color: #707070;
     line-height: 1.3;
     text-transform: uppercase;
-} 
+}
+
 .socialNet {
     margin-bottom: 1.5rem;
 }
-.address, .legal {
+
+.address,
+.legal {
     font-family: "WSans-Regular";
     font-size: 0.75rem;
     color: #707070;
     margin-bottom: 1rem;
 }
+
 .address p:first-of-type {
     font-family: "WSans-SBold";
 }
+
 .fichaSlider {
     background-color: #0944E1;
     padding: 1rem 2rem 0;
     position: relative;
 }
-.fichaSlider .prev, .fichaSlider .next {
+
+.fichaSlider .prev,
+.fichaSlider .next {
     display: none;
 }
+
 .fichaText {
     margin: 1.5rem 0;
     width: 90%;
 }
+
 .fichamark {
     background-color: #FFC400;
     width: fit-content;
@@ -325,34 +406,41 @@ footer li a {
     font-size: 0.875rem;
     color: #0944E1;
 }
+
 .fichaText h2 {
     color: #fff;
 }
+
 .fichaText p:last-of-type {
     color: #fff;
     font-family: "WSans-light";
     margin: 0.5rem 0 1rem;
 }
+
 .fichaSlider .pag {
     display: flex;
     justify-content: space-between;
     padding-bottom: 1rem;
 }
+
 .fichaSlider .pag .bullets {
     position: unset;
     width: auto;
     align-items: center;
     gap: 0.5rem;
 }
-.fichaSlider .pag > div:last-of-type {
+
+.fichaSlider .pag>div:last-of-type {
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 0.5rem;
 }
+
 .fichaSlider .pag img {
     width: 30%;
 }
+
 .fichaSlider .pag img:last-of-type {
     transform: rotateY(180deg);
 }
@@ -370,25 +458,30 @@ footer li a {
         box-shadow: 0 0 10px 7px rgb(112 112 112 / 12%);
         margin-bottom: 2rem;
     }
+
     .dirCount {
         width: 100%;
         justify-content: flex-end;
         display: flex;
         gap: 0.5rem;
     }
-    .directory > div:last-of-type button {
-        display: none;    
+
+    .directory>div:last-of-type button {
+        display: none;
     }
+
     .search {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 2rem;
     }
+
     .search div {
         width: 100%;
     }
-    .search > button {
+
+    .search>button {
         display: inline;
     }
 }
@@ -397,259 +490,327 @@ footer li a {
     h2 {
         font-size: 1.75rem;
     }
+
     .bullet {
         width: 11px;
         height: 11px;
     }
+
     .container {
         padding: 0 2.75rem;
     }
+
     .headerFirst {
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
+
     .headerFirst a {
         font-family: "WSans-Regular";
         color: #707070;
         padding: 0 1rem;
         border-right: 1px solid #707070;
     }
+
     .headerFirst a:last-of-type {
         border: none;
         padding-right: 0;
     }
+
     .headerMid {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
+
     .headerLast {
         padding: 0 0.7rem;
         background-color: unset;
     }
+
     .menu {
         padding: 1rem 0;
         margin: 0 2rem;
     }
+
     .session {
         align-self: auto;
     }
-    .menu > div:first-child {
+
+    .menu>div:first-child {
         display: none;
     }
+
     .deskMenu {
         display: flex;
         gap: 1rem;
     }
+
     .deskMenu a {
         font-family: "Oswald-Regular";
         color: #0944E1;
         text-transform: uppercase;
     }
+
     .search input {
         padding: 1rem 1.5rem;
         padding-right: 3rem;
         font-size: 1rem;
     }
+
     .search div button {
         transform: translate(-30%, 55%);
     }
+
     .button {
         font-size: 0.75rem;
         padding: 0.6rem 1rem;
     }
-    .button2 {    
+
+    .button2 {
         padding: 0.8rem 3rem;
         font-size: 1rem;
     }
+
     .button4 {
         padding: 0.8rem 3rem;
         font-size: 1rem;
     }
+
     .session a:last-of-type {
         font-size: 0.87rem;
         margin-left: 1.5rem;
     }
+
     .menu .search input {
         padding-right: 4.5rem;
     }
+
     .bannerText {
         margin-left: 1.5rem;
         margin-right: 1.5rem;
     }
+
     .directory {
         margin: 0 1.5rem 2rem;
     }
-    .dirCards > div:first-of-type .dirCardSingle {
+
+    .dirCards>div:first-of-type .dirCardSingle {
         max-width: 11rem;
     }
+
     .dirText p {
         font-size: 1.12rem;
     }
+
     .dirCount {
-        font-size: 1.37rem; 
-        margin-top: 1.5rem;   
+        font-size: 1.37rem;
+        margin-top: 1.5rem;
     }
-    .footer > div:first-child {
+
+    .footer>div:first-child {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: 0 auto;
         max-width: 680px;
     }
+
     .footerLogo img {
         width: 4.5rem;
     }
+
     footer nav {
         display: flex;
         gap: 2rem;
         text-align: left;
         margin: 0;
     }
+
     footer li a {
         font-size: 1rem;
     }
+
     .socialNet {
         margin-bottom: 0.5rem;
         text-align: left;
     }
+
     .address {
         font-size: 1rem;
         text-align: left;
     }
+
     .legal {
         font-size: 1rem;
         margin-top: 1.5rem;
     }
+
     .fichaSlider {
         padding-top: 3rem;
         position: relative;
     }
+
     .fichaSliderSingle {
         display: flex;
         align-items: center;
         gap: 2rem;
     }
+
     .fichaSliderSingle picture {
         width: 50%;
     }
+
     .fichaText {
         margin: 0;
         width: 50%;
     }
+
     p.fichamark {
         font-size: 1.125rem;
         padding: 0.2rem 1.5rem;
     }
+
     .fichaText p:last-of-type {
         font-size: 1.125rem;
         margin-bottom: 2rem;
     }
+
     .fichaText a {
         padding: 0.4rem 2rem;
         font-size: 0.875rem;
     }
+
     .fichaSlider .pag {
         margin: 1rem auto 0;
         width: 80%;
     }
+
     .fichaSlider .pag img {
         width: 40%;
     }
 }
+
 @media screen and (min-width: 1112px) {
     h2 {
         font-size: 2.25rem;
     }
+
     .button {
         font-size: 0.875rem;
     }
+
     .button4 {
         font-size: 1rem;
     }
+
     #dirSection {
         display: flex;
         align-items: center;
         gap: 4rem;
         margin: 6rem auto;
     }
+
     .directory {
         margin: 0;
         width: 40%;
     }
-    .search > button {
+
+    .search>button {
         display: none;
     }
-    .directory > div:last-of-type {
+
+    .directory>div:last-of-type {
         flex-direction: column;
         align-items: baseline;
         margin-top: 1.5rem;
     }
-    .directory > div:last-of-type button {
+
+    .directory>div:last-of-type button {
         display: block;
         font-size: 1rem;
     }
+
     .dirText p {
         font-size: 1.375rem;
     }
+
     .dirCount {
         flex-direction: column;
         font-size: 1.5rem;
     }
+
     .dirCards {
         max-width: unset;
     }
-    .dirCards > div {
+
+    .dirCards>div {
         margin-bottom: 0;
     }
+
     .mapText p {
-       font-size: 1.375rem;
+        font-size: 1.375rem;
     }
+
     .container.footer {
         padding: 2rem 2.75rem 1rem;
     }
-    .footer > div:first-child {
+
+    .footer>div:first-child {
         max-width: 1300px;
     }
+
     .footerLogo {
         align-self: baseline;
     }
+
     .footerLogo img {
         width: auto;
     }
-    footer nav, footer nav > div {
+
+    footer nav,
+    footer nav>div {
         margin-top: 4rem;
     }
+
     .legal {
         text-align: left;
     }
-    .fichaSlider > div:first-of-type {
+
+    .fichaSlider>div:first-of-type {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         gap: 3rem;
     }
-    .fichaSlider .prev, .fichaSlider .next {
+
+    .fichaSlider .prev,
+    .fichaSlider .next {
         display: block;
     }
+
     .fichaSlider .pag {
         justify-content: center;
         margin-top: 2rem;
         padding-bottom: 2rem;
     }
-    .fichaSlider .pag > div:last-of-type {
+
+    .fichaSlider .pag>div:last-of-type {
         display: none;
     }
 }
 
 @media screen and (min-width: 1388px) {
-    .container, header {
+
+    .container,
+    header {
         max-width: 1300px;
         margin-left: auto;
         margin-right: auto;
         padding: 0;
     }
+
     .menu {
         margin: 0;
     }

@@ -7,18 +7,22 @@
     flex-direction: column;
     align-items: center;
 }
+
 .countResults {
     font-family: "WSans-Light";
     font-size: 1rem;
     color: #707070;
     margin-bottom: 1rem;
 }
+
 .countResults span {
     font-family: "WSans-SBold";
 }
+
 .searchSection a {
     align-self: flex-end;
 }
+
 .filtersearch {
     display: none;
     position: absolute;
@@ -30,16 +34,20 @@
     padding: 2rem;
     z-index: 1;
 }
+
 .searchFilterForm {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
+
 .inputSearch {
     position: relative;
 }
-.inputSearch input, .inputSearch select {
+
+.inputSearch input,
+.inputSearch select {
     width: -webkit-fill-available;
     padding: 0.8rem 1rem;
     border-radius: 20px;
@@ -50,7 +58,8 @@
     color: #707070;
     appearance: none;
 }
-.inputSearch select + span {
+
+.inputSearch select+span {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -59,6 +68,7 @@
     font-size: 0.875rem;
     color: #707070;
 }
+
 .inputSearch img {
     position: absolute;
     top: 50%;
@@ -68,19 +78,23 @@
     cursor: pointer;
     width: 20px;
 }
+
 .searchFilterForm .button2 {
     width: 100%;
     padding: 0.8rem 1.3rem;
 }
+
 .changeGrid {
     display: none;
 }
+
 .results {
     display: grid;
     gap: 1rem;
     margin-top: 1rem;
     width: 100%;
 }
+
 .resultSingle {
     display: flex;
     align-items: center;
@@ -89,34 +103,41 @@
     border-radius: 10px 0 0 10px;
     box-shadow: 0px 3px 7px -1px rgb(112 112 112 / 27%);
 }
+
 .resultSingle img {
     width: 35%;
     max-width: 160px;
     border-radius: 10px 0 0 10px;
 }
+
 .resultText {
     width: 60%;
 }
+
 .resultText h2 {
     font-size: 0.75rem;
     margin: 0;
     text-align: left;
 }
+
 .resultText p {
     margin: 0.2rem 0;
     font-family: "WSans-Light";
     font-size: 0.625rem;
     color: #707070;
 }
+
 .seeMore {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
+
 .seeMore img {
     width: 13px;
     transform: rotateZ(270deg);
 }
+
 .fichaDate {
     position: absolute;
     top: 0.2rem;
@@ -125,6 +146,7 @@
     font-size: 0.6rem;
     color: #707070;
 }
+
 .pag {
     display: flex;
     justify-content: space-between;
@@ -132,11 +154,13 @@
     width: 100%;
     margin-top: 3rem;
 }
+
 .pages {
     display: flex;
     align-items: center;
     gap: 0.2rem;
 }
+
 .pageSingle {
     font-family: "WSans-Regular";
     font-size: 1.125rem;
@@ -149,11 +173,14 @@
     align-items: center;
     justify-content: center;
 }
+
 .pageSingle.active {
     background-color: #FF5900;
     color: #fff;
 }
-.prev, .next {
+
+.prev,
+.next {
     border-radius: 50%;
     text-align: center;
     display: flex;
@@ -161,26 +188,51 @@
     justify-content: center;
     padding: 0.2rem;
 }
+
 .next {
     transform: rotateY(180deg);
 }
-.prev.inactive, .next.inactive {
+
+.prev.inactive,
+.next.inactive {
     background-color: #C0C0C0;
 }
-.prev.active, .next.active {
+
+.prev.active,
+.next.active {
     background-color: #FF5900;
+}
+
+.sliderPrime {
+    position: relative;
+}
+
+.sliderMain {
+    overflow: hidden;
+    width: 100%;
+}
+
+.sliderGroup {
+    display: flex;
+}
+
+.sliderSingle {
+    transition: transform 0.5s ease-in;
 }
 
 @media screen and (min-width: 420px) {
     .resultSingle {
         gap: 1rem;
     }
+
     .resultText {
         padding-right: 2rem;
     }
+
     .resultText h2 {
         font-size: 0.875rem;
     }
+
     .resultText p {
         margin: 0.4rem 0;
         font-size: 0.75rem;
@@ -191,31 +243,38 @@
     .resultText h2 {
         font-size: 1.125rem;
     }
+
     .resultText p {
         margin: 0.8rem 0;
         font-size: 0.875rem;
     }
+
     .fichaDate {
         font-size: 0.875rem;
     }
-    .prev, .next {
+
+    .prev,
+    .next {
         padding: 0.5rem;
     }
+
     .seeMore img {
         width: 18px;
     }
 }
 
 @media screen and (min-width: 900px) {
-    .searchSection > a {
+    .searchSection>a {
         display: none;
     }
+
     .filtersearch {
         display: block;
         position: unset;
         width: -webkit-fill-available;
         border-radius: 10px;
     }
+
     .searchFilterForm {
         flex-wrap: wrap;
         flex-direction: row;
@@ -223,57 +282,107 @@
         align-items: center;
         gap: 1rem;
     }
+
     .inputSearch {
         width: 24%;
     }
-    .inputSearch input, .inputSearch select {
+
+    .inputSearch input,
+    .inputSearch select {
         font-size: 1rem;
     }
+
     .searchFilterForm .button2 {
         width: auto;
     }
+
     .button5 {
         padding: 0.8rem 1rem;
     }
+
     .results {
         margin-top: 3rem;
-    }    
+    }
 }
+
 @media screen and (min-width: 1024px) {
     .changeGrid {
         display: flex;
         margin: 2rem 0 0;
     }
+
     .changeGrid input[type="radio"] {
         display: none;
     }
-    input#grid + label {
-        background: url(../assets/gridcheck.png) no-repeat center;
+
+    .changeGrid input[type="radio"]+label {
         width: 19px;
         height: 19px;
         padding: 0.5rem;
+        cursor: pointer;
     }
-    input#line + label {
+
+    .changeGrid #grid+label {
+        background: url(../assets/gridcheck.png) no-repeat center;
+        border-radius: 12px 0 0 12px;
+    }
+
+    .changeGrid #line+label {
         background: url(../assets/linecheck.png) no-repeat center;
-        width: 19px;
-        height: 19px;
-        padding: 0.5rem;
-        background-color: #EFF1F3;
         border-radius: 0 12px 12px 0;
     }
+
+    .changeGrid #grid:checked+label,
+    .changeGrid #line:checked+label {
+        background-color: #EFF1F3;
+    }
+
+    .changeGrid #grid:not(:checked)+label,
+    .changeGrid #line:not(:checked)+label {
+        background-color: unset;
+    }
+
+
     .changeGrid p {
         font-family: "WSans-Regular";
         font-size: 1.125rem;
         margin-left: 1rem;
     }
-    .results.twoColumns{
+
+    .results.twoColumns {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .resultText p {
         margin: 0.4rem 0;
         font-size: 0.875rem;
     }
+
     .results {
         max-width: 1160px;
+    }
+}
+
+@media screen and (min-width: 1112px) {
+    .sliderMain {
+        width: 85%;
+    }
+
+    .sliderPrime .prev {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .sliderPrime .next {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%) rotateY(180deg);
+        cursor: pointer;
     }
 }

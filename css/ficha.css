@@ -3,59 +3,73 @@
     align-items: flex-end;
     justify-content: center;
 }
+
 .fichaHead img {
     display: none;
 }
+
 .fichaTitle {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .fichaTitle div {
     display: flex;
     align-items: flex-end;
 }
+
 .fichaTitle p {
     font-size: 0.625rem;
 }
+
 .fichaTitle p:first-of-type {
     font-family: "WSans-Regular";
     color: #4E4F5D;
     padding: 0 1rem 0.4rem 0.5rem;
     border-bottom: 1px solid #FF5900;
 }
+
 .fichaTitle h1 {
     font-size: 1.4rem;
     padding-top: 1rem;
 }
+
 .fichaGrid .fichaSlider {
     background-color: unset;
     position: relative;
     overflow: hidden;
     padding: 0;
 }
+
 .fichaSlider .slideImages {
     display: flex;
     flex-wrap: nowrap;
 }
-.fichaGrid .fichaSlider .prev, .fichaSlider .next {
+
+.fichaGrid .fichaSlider .prev,
+.fichaSlider .next {
     position: absolute;
     top: 50%;
     display: block;
 }
+
 .fichaGrid .fichaSlider .prev {
     left: 1rem;
     transform: translateY(-50%);
 
 }
+
 .fichaGrid .fichaSlider .next {
     right: 1rem;
     transform: translateY(-50%) rotateY(180deg);
 }
+
 .fichaContent {
     margin-bottom: 3rem;
 }
+
 .tabs {
     display: flex;
     align-items: center;
@@ -64,32 +78,38 @@
     border-bottom: 1px solid #D4E1F7;
     margin: 1rem 0 0.5rem;
 }
+
 .tabsTitles.container {
     display: flex;
     gap: 1rem;
     align-items: center;
     margin-top: 0;
 }
+
 .tabsTitles p {
     padding: 0.5rem 0;
     font-family: "WSans-Regular";
     font-size: 0.875rem;
     color: #4E4F5D;
 }
+
 .tabsTitles p.tabActive {
     font-family: "WSans-SBold";
     color: #FF5900;
     border-bottom: 2px solid #FF5900;
 }
+
 .tabs .share {
     display: none;
 }
+
 .fichaContentText p {
     font-family: "WSans-Regular";
     font-size: 0.875rem;
     line-height: 1.3;
     color: #4E4F5D;
 }
+
 .fichaContentButtons {
     display: flex;
     align-items: center;
@@ -97,37 +117,44 @@
     gap: 1rem;
     margin-top: 1rem;
 }
+
 .fichaContentButtons a:first-of-type {
     font-family: "WSans-Regular";
     font-size: 0.875rem;
     color: #0844E1;
 }
+
 .fichaContentButtons a.button {
     display: flex;
     align-items: center;
     gap: 0.4rem;
     font-size: 0.6rem;
 }
+
 .fichaGeneral {
     padding: 2rem;
     box-shadow: 0 0 20px 2px rgb(112, 112, 112, 0.27);
     font-size: 0.875rem;
     margin-bottom: 3rem;
 }
+
 .fichaGeneral h2 {
     margin-bottom: 1rem;
     font-size: 1rem;
 }
+
 .fichaGeneral p {
     font-family: "WSans-Regular";
     color: #4E4F5D;
     margin-bottom: 0.5rem;
 }
+
 .fichaGeneral p.coloredText {
     font-family: "WSans-SBold";
     color: #0844E1;
     margin-bottom: 0.2rem;
 }
+
 .fichaDates {
     font-family: "WSans-Regular";
     color: #4E4F5D;
@@ -136,20 +163,46 @@
     border-bottom: 1px solid #D4E1F7;
     padding: 1.5rem 2rem 0.5rem;
 }
+
 .fichaDates p {
     margin-bottom: 1rem;
 }
 
+.sliderPrime {
+    position: relative;
+}
+
+.sliderMain {
+    overflow: hidden;
+    width: 100%;
+}
+
+.sliderGroup {
+    display: flex;
+}
+
+.sliderSingle {
+    transition: transform 0.5s ease-in;
+}
+
 @media screen and (min-width: 420px) {
-    .fichaTitle p, .tabsTitles p, .fichaContentText p, .fichaContentButtons a:first-of-type, .fichaGeneral p {
+
+    .fichaTitle p,
+    .tabsTitles p,
+    .fichaContentText p,
+    .fichaContentButtons a:first-of-type,
+    .fichaGeneral p {
         font-size: 1rem;
     }
+
     .fichaTitle h1 {
         font-size: 2rem;
     }
+
     .fichaContentButtons a.button {
         font-size: 0.81rem;
     }
+
     .fichaDates {
         font-size: 0.75rem;
     }
@@ -163,6 +216,7 @@
         margin: 4rem auto 0;
         max-width: 1300px;
     }
+
     .fichaHead {
         grid-column: 2/4;
         padding: 0 1.5rem;
@@ -170,48 +224,60 @@
         padding-right: 0;
         justify-content: space-between;
     }
+
     .slideImages img {
         border-radius: 10px;
     }
+
     .fichaTitle {
         align-items: flex-start;
     }
+
     .fichaTitle div {
         display: flex;
         align-items: flex-end;
     }
+
     .fichaGrid .fichaSlider {
         grid-row: 1/2;
     }
+
     .fichaContent {
         grid-column: 2/4;
         margin: 0;
     }
+
     .tabs {
         margin-top: 0;
     }
+
     .tabsTitles.container {
         padding: 0 1.5rem;
         margin: 0;
     }
+
     .tabs .share {
         display: flex;
         align-items: center;
         gap: 0.5rem;
         font-family: 'WSans-light';
     }
+
     .fichaContentText.container {
         padding: 0 0 0 2rem;
         margin-top: 1.5rem;
     }
+
     .fichaContentButtons {
         flex-direction: column;
         align-items: baseline;
     }
+
     .fichaContentButtons a.button {
         align-self: flex-end;
         padding: 0.4rem 1rem;
     }
+
     .fichaGeneral {
         grid-column: 1/2;
         grid-row: 2/3;
@@ -221,42 +287,62 @@
         box-shadow: 0 0 20px 0px rgb(112 112 112 / 15%);
         height: fit-content;
     }
+
     .fichaDates.container {
         grid-column: 1/4;
         display: flex;
         justify-content: space-between;
         padding: 1rem 0;
     }
+
     .fichaDates p {
         margin-bottom: 0;
         width: 25%;
     }
-    .fichaTitle p, .tabsTitles p, .fichaContentText p, .fichaContentButtons a:first-of-type, .fichaGeneral p, .tabs .share {
+
+    .fichaTitle p,
+    .tabsTitles p,
+    .fichaContentText p,
+    .fichaContentButtons a:first-of-type,
+    .fichaGeneral p,
+    .tabs .share {
         font-size: 0.875rem;
     }
 }
+
 @media screen and (min-width: 1024px) {
     .fichaHead {
         height: fit-content;
     }
+
     .fichaHead img {
         display: block;
     }
+
     .fichaGrid .fichaSlider .slideImages {
         gap: 0;
         justify-content: flex-start;
     }
+
     .fichaContent {
         margin-top: -2rem;
     }
+
     .fichaContentText.container {
         padding: 0 0 0 2.5rem;
     }
+
     .tabs {
         margin-left: 1.5rem;
     }
-    .fichaTitle p, .tabsTitles p, .fichaContentText p, .fichaContentButtons a:first-of-type, .fichaGeneral p, .tabs .share {
+
+    .fichaTitle p,
+    .tabsTitles p,
+    .fichaContentText p,
+    .fichaContentButtons a:first-of-type,
+    .fichaGeneral p,
+    .tabs .share {
         font-size: 1rem;
     }
-   
+
 }

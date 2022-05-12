@@ -18,8 +18,8 @@
         </div>
         <div class="container headerMid">
             <div class="logos">
-                <img src="assets/repdomlogo.png" alt="Logo Ministerio de Cultura Rep.Dom.">
-                <img src="assets/siculturalogo.png" alt="Logo SiCultura">
+                <a href="#"><img src="assets/repdomlogo.png" alt="Logo Ministerio de Cultura Rep.Dom."></a>
+                <a href="index.html"><img src="assets/siculturalogo.png" alt="Logo SiCultura"></a>
             </div>
             <div class="session">
                 <a class="button" href="#">Solicitar Cuenta</a>
@@ -48,10 +48,10 @@
             <nav class="mobileNav">
                 <ul>
                     <li>
-                        <a href="#">Inicio</a>
+                        <a href="index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="#">Directorio</a>
+                        <a href="directorio.html">Directorio</a>
                     </li>
                     <li>
                         <a href="#">Mapa</a>
@@ -202,10 +202,10 @@
     </main>
     <footer class="container footer">
         <div>
-            <picture class="footerLogo">
+            <a href="index.html"><picture class="footerLogo">
                 <source media="(min-width: 1112px)" srcset="assets/siculturafooter.png">
                 <img src="assets/statistics-icon.png" alt="statistics-icon" id>
-            </picture>
+            </picture></a>
             <nav>
                 <ul>
                     <li>

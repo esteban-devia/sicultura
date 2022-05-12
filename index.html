@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/home.css">
     <title>SiCultura- Inicio</title>
 </head>
+
 <body>
     <header>
         <div class="container headerFirst">
@@ -18,8 +20,8 @@
         </div>
         <div class="container headerMid">
             <div class="logos">
-                <img src="assets/repdomlogo.png" alt="Logo Ministerio de Cultura Rep.Dom.">
-                <img src="assets/siculturalogo.png" alt="Logo SiCultura">
+                <a href="#"><img src="assets/repdomlogo.png" alt="Logo Ministerio de Cultura Rep.Dom."></a>
+                <a href="index.html"><img src="assets/siculturalogo.png" alt="Logo SiCultura"></a>
             </div>
             <div class="session">
                 <a class="button" href="#">Solicitar Cuenta</a>
@@ -28,7 +30,7 @@
         </div>
         <div class="headerLast">
             <div class="menu">
-                <div>
+                <div id="ham">
                     <img src="assets/ham.png" alt="">
                     <p>Menú</p>
                 </div>
@@ -48,10 +50,10 @@
             <nav class="mobileNav">
                 <ul>
                     <li>
-                        <a href="#">Inicio</a>
+                        <a href="index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="#">Directorio</a>
+                        <a href="directorio.html">Directorio</a>
                     </li>
                     <li>
                         <a href="#">Mapa</a>
@@ -80,30 +82,75 @@
     </header>
     <main>
         <section>
-            <div class="heroBanner">
+            <div class="heroBanner sliderPrime">
+                <div class="heroSlider sliderMain">
+                    <div class="heroSlides sliderGroup">
+                        <div class="heroSlideSingle sliderSingle">
+                            <picture>
+                                <source media="(max-width:680px)" srcset="assets/home-hero-mobile.jpg">
+                                <img src="assets/home-hero.jpg" alt="">
+                            </picture>
+                            <div class="bannerText">
+                                <h2>Novedades</h2>
+                                <p>Lorem, ipsum dolor.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the industry's standard dummy.</p>
+                                <a href="#" class="button button2">ver más</a>
+                            </div>
+                        </div>
+                        <div class="heroSlideSingle sliderSingle">
+                            <picture>
+                                <source media="(max-width:680px)" srcset="assets/home-hero-mobile.jpg">
+                                <img src="assets/home-hero.jpg" alt="">
+                            </picture>
+                            <div class="bannerText">
+                                <h2>Novedades</h2>
+                                <p>Lorem, ipsum dolor.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the industry's standard dummy.</p>
+                                <a href="#" class="button button2">ver más</a>
+                            </div>
+                        </div>
+                        <div class="heroSlideSingle sliderSingle">
+                            <picture>
+                                <source media="(max-width:680px)" srcset="assets/home-hero-mobile.jpg">
+                                <img src="assets/home-hero.jpg" alt="">
+                            </picture>
+                            <div class="bannerText">
+                                <h2>Novedades</h2>
+                                <p>Lorem, ipsum dolor.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the industry's standard dummy.</p>
+                                <a href="#" class="button button2">ver más</a>
+                            </div>
+                        </div>
+                        <div class="heroSlideSingle sliderSingle">
+                            <picture>
+                                <source media="(max-width:680px)" srcset="assets/home-hero-mobile.jpg">
+                                <img src="assets/home-hero.jpg" alt="">
+                            </picture>
+                            <div class="bannerText">
+                                <h2>Novedades</h2>
+                                <p>Lorem, ipsum dolor.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the industry's standard dummy.</p>
+                                <a href="#" class="button button2">ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="prev">
                     <img src="assets/prev.png" alt="">
-                </div>
-                <div class="heroSlider">
-                    <picture>
-                        <source media="(max-width:680px)" srcset="assets/home-hero-mobile.jpg">
-                        <img src="assets/home-hero.jpg" alt="">
-                    </picture>
-                    <div class="bannerText">
-                        <h2>Novedades</h2>
-                        <p>Lorem, ipsum dolor.</p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                        <a href="#" class="button button2">ver más</a>
-                    </div>
                 </div>
                 <div class="next">
                     <img src="assets/prev.png" alt="">
                 </div>
                 <div class="bullets">
-                    <div class="bullet active"></div>
-                    <div class="bullet"></div>
-                    <div class="bullet"></div>
-                    <div class="bullet"></div>
+
                 </div>
             </div>
         </section>
@@ -113,15 +160,17 @@
                     <h2>Directorio Cultural</h2>
                     <p>Explora y conoce los recursos culturale de Panamá, por medio de fichas informativas</p>
                 </div>
-                <form action="" class="search">
+                <form action="busqueda.html" name="fichaSearch" class="search">
                     <div>
-                        <input type="search" name="searchDir" id="searchDir" placeholder="Buscar en el directorio cultural">
-                        <button type="submit" name="sendIcon"><img src="assets/search-icon.png" alt="search-icon"></button>
+                        <input type="search" name="searchDir" id="searchDir"
+                            placeholder="Buscar en el directorio cultural">
+                        <button type="submit" name="sendIcon"><img src="assets/search-icon.png"
+                                alt="search-icon"></button>
                     </div>
-                    <button type="submit" name="snmdButton" class="button button4">Buscar</button>
+                    <button type="submit" form="fichaSearch" name="snmdButton" class="button button4">Buscar</button>
                 </form>
                 <div>
-                    <button type="submit" name="sendButton" class="button button2">Buscar</button>
+                    <button type="submit" form="fichaSearch" name="sendButton" class="button button2">Buscar</button>
                     <div class="dirCount">
                         <p>10,520 fichas</p>
                         <p>en el directorio</p>
@@ -179,9 +228,10 @@
                 <p>Explora y visualiza en el mapa los recursos culturales de Panamá</p>
                 <a href="#" class="button button4">Accede al mapa</a>
             </div>
-            <div class="mapMap"><div>
-                <a href="#" class="button button4">Accede al mapa</a>
-            </div>
+            <div class="mapMap">
+                <div>
+                    <a href="#" class="button button4">Accede al mapa</a>
+                </div>
             </div>
         </section>
         <section class="container statistics">
@@ -191,21 +241,23 @@
             <a href="#" class="button button4">Accede a las estadísticas</a>
         </section>
         <section class="newsForm">
-                <h2 class="coloredTitle">Boletín informativo</h2>
-                <form action="" class="container newsletter">
-                        <input type="email" name="email" id="email" placeholder="Correo electrónico">
-                        <input type="text" name="name" id="name" placeholder="Nombre">
-                        <input type="text" name="lastname" id="lastname" placeholder="Apellido">
-                    <button type="submit" class="button button4">REGISTRARME</button>
-                </form>
+            <h2 class="coloredTitle">Boletín informativo</h2>
+            <form action="" class="container newsletter">
+                <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                <input type="text" name="name" id="name" placeholder="Nombre">
+                <input type="text" name="lastname" id="lastname" placeholder="Apellido">
+                <button type="submit" class="button button4">REGISTRARME</button>
+            </form>
         </section>
     </main>
     <footer class="container footer">
         <div>
-            <picture class="footerLogo">
-                <source media="(min-width: 1112px)" srcset="assets/siculturafooter.png">
-                <img src="assets/statistics-icon.png" alt="statistics-icon" id>
-            </picture>
+            <a href="index.html">
+                <picture class="footerLogo">
+                    <source media="(min-width: 1112px)" srcset="assets/siculturafooter.png">
+                    <img src="assets/statistics-icon.png" alt="statistics-icon" id>
+                </picture>
+            </a>
             <nav>
                 <ul>
                     <li>
@@ -257,5 +309,8 @@
             <p>Ciudad de Panamá</p>
         </div>
     </footer>
+    <script src="js/global.js"></script>
+    <script src="js/slider.js"></script>
 </body>
+
 </html>
