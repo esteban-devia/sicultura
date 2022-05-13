@@ -28,15 +28,17 @@
         </div>
         <div class="headerLast">
             <div class="menu">
-                <div>
+                <div id="ham">
                     <img src="assets/ham.png" alt="">
                     <p>Menú</p>
                 </div>
                 <div class="deskMenu">
+                <a href="index.html" class="active">Inicio</a>
                     <a href="directorio.html">Directorio</a>
-                    <a href="#">Mapa</a>
+                    <a href="mapa.html">Mapa</a>
                     <a href="#">Estadísticas</a>
                     <a href="#">Novedades</a>
+                    <a href="#">Documentos</a>
                 </div>
                 <form action="" class="search">
                     <div>
@@ -54,13 +56,16 @@
                         <a href="directorio.html">Directorio</a>
                     </li>
                     <li>
-                        <a href="#">Mapa</a>
+                        <a href="mapa.html">Mapa</a>
                     </li>
                     <li>
                         <a href="#">Estadisticas</a>
                     </li>
                     <li>
                         <a href="#">Novedades</a>
+                    </li>
+                    <li>
+                        <a href="#">Documentos</a>
                     </li>
                     <li>
                         <a href="#">Sobre Sicultura</a>
@@ -113,15 +118,17 @@
                     <h2>Directorio Cultural</h2>
                     <p>Explora y conoce los recursos culturale de Panamá, por medio de fichas informativas</p>
                 </div>
-                <form action="" class="search">
+                <form action="busqueda.html" name="fichaSearch" class="search">
                     <div>
-                        <input type="search" name="searchDir" id="searchDir" placeholder="Buscar en el directorio cultural">
-                        <button type="submit" name="sendIcon"><img src="assets/search-icon.png" alt="search-icon"></button>
+                        <input type="search" name="searchDir" id="searchDir"
+                            placeholder="Buscar en el directorio cultural">
+                        <button type="submit" name="sendIcon"><img src="assets/search-icon.png"
+                                alt="search-icon"></button>
                     </div>
-                    <button type="submit" name="snmdButton" class="button button4">Buscar</button>
+                    <button type="submit" form="fichaSearch" name="snmdButton" class="button button4">Buscar</button>
                 </form>
                 <div>
-                    <button type="submit" name="sendButton" class="button button2">Buscar</button>
+                    <button type="submit" form="fichaSearch" name="sendButton" class="button button2">Buscar</button>
                     <div class="dirCount">
                         <p>10,520 fichas</p>
                         <p>en el directorio</p>
@@ -131,44 +138,54 @@
             <div class="dirCards">
                 <div>
                     <div class="dirCardSingle">
-                        <img src="assets/hat.png" alt="">
-                        <div class="dirCardText">
-                            <h3>Manifestaciones culturales</h3>
-                            <p>Consec tetur adipi scing elit. Nulla scelerisque</p>
-                        </div>
+                        <a href="manifestacion-cultural.html">
+                            <img src="assets/hat.png" alt="">
+                            <div class="dirCardText">
+                                <h3>Manifestaciones culturales</h3>
+                                <p>Consec tetur adipi scing elit. Nulla scelerisque</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="dirCardSingle">
-                        <img src="assets/award.png" alt="">
-                        <div class="dirCardText">
-                            <h3>Programas oficiales</h3>
-                            <p>Consec tetur adipi scing elit. Nulla scelerisque</p>
-                        </div>
+                        <a href="manifestacion-cultural.html">
+                            <img src="assets/award.png" alt="">
+                            <div class="dirCardText">
+                                <h3>Programas oficiales</h3>
+                                <p>Consec tetur adipi scing elit. Nulla scelerisque</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div>
                     <div class="dirCardSingle">
-                        <img src="assets/grandstand.png" alt="">
-                        <div class="dirCardText">
-                            <h3>Espacios culturales</h3>
-                            <p>Consec tetur adipi scing elit. Nulla scelerisque</p>
-                            <a href="#" class="button button3">Registra un espacio</a>
-                        </div>
+                        <a href="manifestacion-cultural.html">
+                            <img src="assets/grandstand.png" alt="">
+                            <div class="dirCardText">
+                                <h3>Espacios culturales</h3>
+                                <p>Consec tetur adipi scing elit. Nulla scelerisque</p>
+                                <a href="#" class="button button3">Registra un espacio</a>
+                            </div>
+                        </a>
                     </div>
                     <div class="dirCardSingle">
-                        <img src="assets/hands.png" alt="">
-                        <div class="dirCardText">
-                            <h3>Agentes culturales</h3>
-                            <p>Consec tetur adipi scing elit. Nulla scelerisque</p>
-                            <a href="#" class="button button3">Regístrate como agente</a>
-                        </div>
+                        <a href="manifestacion-cultural.html">
+                            <img src="assets/hands.png" alt="">
+                            <div class="dirCardText">
+                                <h3>Agentes culturales</h3>
+                                <p>Consec tetur adipi scing elit. Nulla scelerisque</p>
+                                <a href="#" class="button button3">Regístrate como agente</a>
+                            </div>
+                        </a>
                     </div>
                     <div class="dirCardSingle">
-                        <img src="assets/calendar.png" alt="">
-                        <div class="dirCardText">
-                            <h3>Eventos culturales</h3>
-                            <p>Consec tetur adipi scing elit. Nulla scelerisque</p>
-                            <a href="#" class="button button3">Registra un evento</a>
-                        </div>
+                        <a href="manifestacion-cultural.html">
+                            <img src="assets/calendar.png" alt="">
+                            <div class="dirCardText">
+                                <h3>Eventos culturales</h3>
+                                <p>Consec tetur adipi scing elit. Nulla scelerisque</p>
+                                <a href="#" class="button button3">Registra un evento</a>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -177,10 +194,10 @@
             <div class="container mapText">
                 <h2>Mapa Cultural</h2>
                 <p>Explora y visualiza en el mapa los recursos culturales de Panamá</p>
-                <a href="#" class="button button4">Accede al mapa</a>
+                <a href="mapa.html" class="button button4">Accede al mapa</a>
             </div>
             <div class="mapMap"><div>
-                <a href="#" class="button button4">Accede al mapa</a>
+                <a href="mapa.html" class="button button4">Accede al mapa</a>
             </div>
             </div>
         </section>
@@ -215,7 +232,7 @@
                         <a href="directorio.html">Directorio</a>
                     </li>
                     <li>
-                        <a href="#">Mapa</a>
+                        <a href="mapa.html">Mapa</a>
                     </li>
                 </ul>
                 <ul>

@@ -33,6 +33,10 @@
     align-items: baseline;
 }
 
+.heroSlider .bannerText p {
+    color: #fff;
+}
+
 .heroSlideSingle .bannerText h2 {
     font-family: "Oswald-Regular";
     font-size: 0.87rem;
@@ -212,14 +216,6 @@
 @media screen and (min-width: 1112px) {
     .session a:last-of-type {
         font-size: 0.87rem;
-    }
-
-    .deskMenu {
-        gap: 3rem;
-    }
-
-    .deskMenu a {
-        font-size: 1.25rem;
     }
 
     .mapMap {

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/ficha.css">
+    <link rel="stylesheet" href="css/manifest.css">
     <title>SiCultura- Inicio</title>
 </head>
 
@@ -86,104 +86,80 @@
         </div>
     </header>
     <main>
-        <section>
-            <div class="fichaGrid">
-                <div class="fichaHead container">
-                    <div class="fichaTitle">
-                        <div>
-                            <p>Espacios Culturales</p>
-                            <p class="button">Teatros y auditorios</p>
-                        </div>
-                        <h1 class="coloredTitle">Ateneo de ciudad del Saber</h1>
+        <section class="manifestSection container">
+            <div class="manifestTitle">
+                <div class="manifestTitleText">
+                    <div>
+                        <img src="assets/hat.png" alt="">
                     </div>
-                    <img src="assets/grandstand.png" alt="">
+                    <h1>Manifestaciones culturales</h1>
+                    <p>Consec tetur adipi scing elit. Nulla scelerisque commodo mauris at sem onsectetur adipiscing
+                        elit.</p>
+                    <a href="">Ver más</a>
                 </div>
-                <div class="fichaSlider sliderPrime">
-                    <div class="slideImages sliderMain">
-                        <div class="sliderGroup">
-                            <div class="sliderSingle">
-                                <img src="assets/fichaimage.jpg" alt="">
-                            </div>
-                            <div class="sliderSingle">
-                                <img src="assets/fichaimage.jpg" alt="">
-                            </div>
-                            <div class="sliderSingle">
-                                <img src="assets/fichaimage.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="prev">
-                        <img src="assets/prevtransparent.png" alt="">
-                    </div>
-                    <div class="next">
-                        <img src="assets/prevtransparent.png" alt="">
-                    </div>
-                    <div class="bullets hidden">
-                    </div>
+                <div class="manifestTitleCount">
+                    <p class="countResult">87 Fichas</p>
+                    <p>en el directorio</p>
+                    <a href="#" class="button">
+                        <img src="assets/map-icon-button.png" alt="">
+                        Ver en el mapa
+                    </a>
                 </div>
-                <div class="fichaContent">
-                    <div class="tabs">
-                        <div class="tabsTitles container">
-                            <p class="tabActive">Descripción</p>
-                            <p>Ubicación</p>
-                        </div>
-                        <div class="share">
-                            <p>Comparte</p>
-                            <img src="assets/share.png" alt="">
-                            <img src="assets/share.png" alt="">
-                        </div>
+            </div>
+            <div class="manifestAside">
+                <h2>Directorio</h2>
+                <form action="" class="search">
+                    <div>
+                        <input type="search" name="searchDir" id="searchDir" placeholder="Buscar...">
+                        <button type="submit" name="sendIcon" onclick="send()">
+                            <img src="assets/search-icon.png" alt="search-icon">
+                        </button>
                     </div>
-                    <div class="fichaContentText container">
-                        <p>El Ateneo es un auditorio para cine, artes escénicas, música, conferencias y otras
-                            presentaciones, con más de 700 butacas y equipado con tecnología audiovisual. Esta
-                            infraestructura cultural funciona en el antiguo edificio del cine de Clayton (construido en
-                            1935), considerado un ejemplo de arquitectura bellavistina y rehabilitado por la Fundación
-                            Ciudad del Saber.<br><br>
-                            El cine de Clayton fue construido por la armada de los Estados Unidos en el año de 1935 y
-                            diseñado por los arquitectos Wright y Schay, quienes concibieron varios de los más
-                            sobresalientes inmuebles del barrio de Bellavista, como los edificios Riviera, Sousa e
-                            Hispania (todos ellos aún en pie).<br><br><br>
-                            <strong>Año de inicio de las actividades:</strong> 2010<br><br>
-                            <strong>Superficie total del teatro:</strong> 580 m2<br><br>
-                            <strong>Superficie total de su sala o salas:</strong> 370 m2<br><br>
-                            <strong>Número de salas:</strong> 1<br><br>
-                            <strong>Aforo:</strong> 700 persona<br><br>
-                        </p>
-                        <div class="fichaContentButtons">
-                            <a href="#">Ver más</a>
-                            <a href="#" class="button button2">
-                                <img src="assets/download.png" alt="">
-                                Descargar ficha pdf
-                            </a>
-                        </div>
-                    </div>
+                </form>
+                <div class="manifestMenu">
+                    <a href="#" class="active">Manifestaciones culturales</a>
+                    <a href="#">Programas oficiales</a>
+                    <a href="#">Espacios culturales</a>
+                    <a href="#">Agentes culturales</a>
+                    <a href="#">Eventos culturales</a>
                 </div>
-                <div class="fichaGeneral">
-                    <h2>Datos Generales</h2>
-                    <p class="coloredText">Teléfono</p>
-                    <p>+507 306-3700 | +507 317-3799</p>
-                    <p class="coloredText">Sitio Web</p>
-                    <p>https://www.ciudaddelsaber.com</p>
-                    <p class="coloredText">Correo Electrónico</p>
-                    <p>correo@correo.com</p>
-                    <p class="coloredText">Redes Sociales</p>
-                    <div class="fichaSocial">
-                        <a href="#"><img src="assets/fb-grey.png" alt=""></a>
-                        <a href="#"><img src="assets/tw-grey.png" alt=""></a>
-                        <a href="#"><img src="assets/ig-grey.png" alt=""></a>
-                    </div>
-                    <p class="coloredText">Horario</p>
-                    <p class="under">Lunes a Viernes, de 8:00 am a 4:00 pm</p>
-                    <p class="coloredText">Administración</p>
-                    <p>Privada - Entidad sin fines de lucro<br><br>
-                        Administrado por: Fundación Ciudad del Saber</p>
-                    <p class="coloredText">Subsector Cultural</p>
-                    <p>Artes Escenicas | Música</p>
+                <a href="inicio.html" class="back">Regresar al inicio</a>
+            </div>
+            <div class="manifestCards">
+                <div class="manifestCardSingle">
+                    <img src="assets/orales.png" alt="">
+                    <h3>Tradiciones y expresiones orales</h3>
+                    <p>Consec tetur adipi scing elit. Nulla scelerisque.</p>
                 </div>
-                <div class="fichaDates container">
-                    <p>Creación de esta ficha en Sicultura: 02/06/2022</p>
-                    <p>Última actualización: 17/11/2022</p>
-                    <p>Responsable de esta ficha: Fundación Ciudad del Saber</p>
+                <div class="manifestCardSingle">
+                    <img src="assets/artes.png" alt="">
+                    <h3>Artes del espectáculo</h3>
+                    <p>Consec tetur adipi scing elit. Nulla scelerisque.</p>
+                </div>
+                <div class="manifestCardSingle">
+                    <img src="assets/artesanal.png" alt="">
+                    <h3>Técnicas artesanales tradicionales</h3>
+                    <p>Consec tetur adipi scing elit. Nulla scelerisque.</p>
+                </div>
+                <div class="manifestCardSingle">
+                    <img src="assets/rituales.png" alt="">
+                    <h3>Usos sociales, rituales y actos festivos</h3>
+                    <p>Consec tetur adipi scing elit. Nulla scelerisque.</p>
+                </div>
+                <div class="manifestCardSingle">
+                    <img src="assets/medicinas.png" alt="">
+                    <h3>Medicionas tradicionales</h3>
+                    <p>Consec tetur adipi scing elit. Nulla scelerisque.</p>
+                </div>
+                <div class="manifestCardSingle">
+                    <img src="assets/cocinas.png" alt="">
+                    <h3>Cocinas tradicionales</h3>
+                    <p>Consec tetur adipi scing elit. Nulla scelerisque.</p>
+                </div>
+                <div class="manifestCardSingle">
+                    <img src="assets/naturaleza.png" alt="">
+                    <h3>Conocimientos y usos relacionados con la naturaleza</h3>
+                    <p>Consec tetur adipi scing elit. Nulla scelerisque.</p>
                 </div>
             </div>
         </section>
@@ -247,8 +223,12 @@
             <p>Ciudad de Panamá</p>
         </div>
     </footer>
+    <script>
+        function send() {
+            window.location.href = "busqueda.html";
+        }
+    </script>
     <script src="js/global.js"></script>
-    <script src="js/slider.js"></script>
 </body>
 
 </html>

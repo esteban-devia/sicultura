@@ -43,9 +43,8 @@
     padding: 0;
 }
 
-.fichaSlider .slideImages {
-    display: flex;
-    flex-wrap: nowrap;
+.fichaSlider.sliderPrime .slideImages.sliderMain {
+    display: block;
 }
 
 .fichaGrid .fichaSlider .prev,
@@ -155,6 +154,10 @@
     margin-bottom: 0.2rem;
 }
 
+.fichaGeneral p.under {
+    text-decoration: underline;
+}
+
 .fichaDates {
     font-family: "WSans-Regular";
     color: #4E4F5D;
@@ -183,6 +186,11 @@
 
 .sliderSingle {
     transition: transform 0.5s ease-in;
+}
+
+.fichaSocial {
+    display: flex;
+    gap: 0.5rem;
 }
 
 @media screen and (min-width: 420px) {
@@ -317,11 +325,6 @@
 
     .fichaHead img {
         display: block;
-    }
-
-    .fichaGrid .fichaSlider .slideImages {
-        gap: 0;
-        justify-content: flex-start;
     }
 
     .fichaContent {

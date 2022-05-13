@@ -66,12 +66,17 @@ h2 {
     font-family: "Oswald-Bold";
     font-size: 1.5rem;
     color: #FF5900;
+    line-height: 1.2;
 }
 
 h3 {
     font-family: "WSans-Bold";
     font-size: 0.87rem;
     color: #FF5900;
+}
+
+p {
+    color: #707070;
 }
 
 button {
@@ -87,6 +92,10 @@ button {
 .container {
     padding: 0 2rem;
     margin-top: 2rem;
+}
+
+.hidden {
+    display: none !important;
 }
 
 .button {
@@ -692,6 +701,18 @@ footer li a {
     }
 }
 
+@media screen and (min-width: 680px) and (max-width: 860px) {
+    .menu {
+        position: relative;
+    }
+
+    .menu .search {
+        position: absolute;
+        top: 100%;
+        right: 0;
+    }
+}
+
 @media screen and (min-width: 1112px) {
     h2 {
         font-size: 2.25rem;
@@ -719,6 +740,18 @@ footer li a {
 
     .search>button {
         display: none;
+    }
+
+    .deskMenu {
+        gap: 3rem;
+    }
+
+    .deskMenu a.active {
+        border-bottom: 2px solid #FF5900;
+    }
+
+    .deskMenu a {
+        font-size: 1.25rem;
     }
 
     .directory>div:last-of-type {

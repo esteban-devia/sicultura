@@ -1,0 +1,83 @@
+.mapTitle {
+    margin-bottom: 3rem;
+}
+
+.mapText div:first-of-type {
+    width: 60%;
+}
+
+.mapText {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.coloredSub {
+    font-family: "WSans-Medium";
+    font-size: 0.687rem;
+    color: #FF5900;
+}
+
+.mapCount {
+    width: 7rem;
+    text-align: right;
+}
+
+.mapCount p:first-of-type {
+    font-family: "WSans-Bold";
+    font-size: 1.5rem;
+    color: #FF5900;
+}
+
+.mapCount p:last-of-type {
+    font-family: "WSans-Light";
+    font-size: 1rem;
+    color: #FF5900;
+}
+
+.mapTitle .coloredText {
+    font-family: "WSans-Regular";
+    font-size: 0.875rem;
+    color: #0844E1;
+    line-height: 1.5;
+}
+
+.mapiframe {
+    width: 100vw;
+    height: 30rem;
+    background-color: beige;
+}
+
+@media screen and (min-width: 520px) {
+    .coloredSub {
+        font-size: 0.875rem;
+    }
+
+    .mapText h1 {
+        font-size: 3.25rem;
+    }
+
+    .mapCount p:first-of-type {
+        font-size: 1.75rem;
+    }
+
+    .mapCount p:last-of-type {
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (min-width: 1112px) {
+    .mapTitle .coloredText {
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    .mapCount p:first-of-type {
+        font-size: 2rem;
+    }
+
+    .mapCount p:last-of-type {
+        font-size: 1.5rem;
+    }
+}
