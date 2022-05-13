@@ -783,6 +783,8 @@ footer li a {
         align-items: center;
         justify-content: space-evenly;
         gap: 3rem;
+        max-width: 1300px;
+        margin: 0 auto;
     }
 
     .fichaSlider .prev,
