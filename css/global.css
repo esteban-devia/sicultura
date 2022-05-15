@@ -34,6 +34,10 @@
 }
 
 @font-face {
+    font-family: "Oswald-SBold";
+    src: url(fonts/Oswald-SemiBold.ttf);
+}
+@font-face {
     font-family: "Oswald-Bold";
     src: url(fonts/Oswald-Bold.ttf);
 }
@@ -89,8 +93,15 @@ button {
     text-align: center;
 }
 
+.coloredText {
+    font-family: "WSans-Regular";
+    color: #0844E1;
+    line-height: 1.5;
+    margin: 1rem 0 1.5rem;
+}
+
 .container {
-    padding: 0 2rem;
+    padding: 0 1.2rem;
     margin-top: 2rem;
 }
 
@@ -453,7 +464,12 @@ footer li a {
 .fichaSlider .pag img:last-of-type {
     transform: rotateY(180deg);
 }
-
+p.publicationsCount {
+    font-family: 'WSans-SBold';
+    color: #FF5900;
+    margin: 0.5rem 0;
+    align-self: flex-end;
+}
 @media screen and (min-width: 420px) {
     .logos img {
         max-width: 100%;
@@ -461,6 +477,9 @@ footer li a {
 }
 
 @media screen and (min-width: 520px) {
+    .container {
+        padding: 02rem;
+    }
     .directory {
         padding: 2rem;
         border-radius: 20px;
@@ -711,8 +730,14 @@ footer li a {
         top: 100%;
         right: 0;
     }
+    .firstSection {
+        margin-top: 4rem !important;
+    }
 }
-
+@media screen and (min-width: 900px) {
+    .publicationsCount {
+font-size: 1.25rem;    }
+}
 @media screen and (min-width: 1112px) {
     h2 {
         font-size: 2.25rem;
@@ -794,17 +819,19 @@ footer li a {
         max-width: 1300px;
     }
 
-    .footerLogo {
+    .footerLogoD {
         align-self: baseline;
     }
-
+    .footerLogoD img {
+        align-self: baseline;
+    }
     .footerLogo img {
-        width: auto;
+        width: 60%;
     }
 
     footer nav,
     footer nav>div {
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 
     .legal {

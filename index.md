@@ -36,8 +36,8 @@
                 <a href="index.html" class="active">Inicio</a>
                     <a href="directorio.html">Directorio</a>
                     <a href="mapa.html">Mapa</a>
-                    <a href="#">Estadísticas</a>
-                    <a href="#">Novedades</a>
+                    <a href="estadisticas.html">Estadísticas</a>
+                    <a href="novedades.html">Novedades</a>
                     <a href="#">Documentos</a>
                 </div>
                 <form action="" class="search">
@@ -59,10 +59,10 @@
                         <a href="mapa.html">Mapa</a>
                     </li>
                     <li>
-                        <a href="#">Estadisticas</a>
+                        <a href="estadisticas.html">Estadísticas</a>
                     </li>
                     <li>
-                        <a href="#">Novedades</a>
+                        <a href="novedades.html">Novedades</a>
                     </li>
                     <li>
                         <a href="#">Documentos</a>
@@ -84,7 +84,7 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="firstSection">
             <div class="heroBanner">
                 <div class="prev">
                     <img src="assets/prev.png" alt="">
@@ -115,7 +115,7 @@
         <section class="container" id="dirSection">
             <div class="directory">
                 <div class="dirText">
-                    <h2>Directorio Cultural</h2>
+                    <h2>Directorio cultural</h2>
                     <p>Explora y conoce los recursos culturale de Panamá, por medio de fichas informativas</p>
                 </div>
                 <form action="busqueda.html" name="fichaSearch" class="search">
@@ -192,7 +192,7 @@
         </section>
         <section id="mapSection">
             <div class="container mapText">
-                <h2>Mapa Cultural</h2>
+                <h2>Mapa cultural</h2>
                 <p>Explora y visualiza en el mapa los recursos culturales de Panamá</p>
                 <a href="mapa.html" class="button button4">Accede al mapa</a>
             </div>
@@ -219,7 +219,7 @@
     </main>
     <footer class="container footer">
         <div>
-            <a href="index.html"><picture class="footerLogo">
+            <a href="index.html" class="footerLogoD"><picture class="footerLogo">
                 <source media="(min-width: 1112px)" srcset="assets/siculturafooter.png">
                 <img src="assets/statistics-icon.png" alt="statistics-icon" id>
             </picture></a>
@@ -237,10 +237,10 @@
                 </ul>
                 <ul>
                     <li>
-                        <a href="#">Estadistíca</a>
+                        <a href="estadisticas.html">Estadistícas</a>
                     </li>
                     <li>
-                        <a href="#">Novedades</a>
+                        <a href="novedades.html">Novedades</a>
                     </li>
                     <li>
                         <a href="#">Mapa del sitio</a>

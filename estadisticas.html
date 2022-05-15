@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/search.css">
-    <title>SiCultura- Búsqueda</title>
+    <link rel="stylesheet" href="css/estadistica.css">
+    <title>SiCultura- Inicio</title>
 </head>
 
 <body>
@@ -31,14 +32,14 @@
         <div class="headerLast">
             <div class="menu">
                 <div id="ham">
-                    <img src="assets/ham.png" alt="">
+                    <img src="assets/ham.png" alt="" id="ham">
                     <p>Menú</p>
                 </div>
                 <div class="deskMenu">
                     <a href="index.html">Inicio</a>
-                    <a href="directorio.html" class="active">Directorio</a>
+                    <a href="directorio.html">Directorio</a>
                     <a href="mapa.html">Mapa</a>
-                    <a href="estadisticas.html">Estadísticas</a>
+                    <a href="estadisticas.html" class="active">Estadísticas</a>
                     <a href="novedades.html">Novedades</a>
                     <a href="#">Documentos</a>
                 </div>
@@ -86,24 +87,25 @@
         </div>
     </header>
     <main>
-        <section class="firstSection container searchSection">
-            <h1>Resultado de la búsqueda</h1>
-            <p class="countResults">Se encontrarion <span>87 fichas</span></p>
+        <section class="firstSection container">
+            <div class="estadHero">
+                <div class="estadTitle">
+                    <h1>Estadisticas culturales</h1>
+                    <p class="coloredText">Consec tetur adipi scing elit. Nulla scelerisque commodo mauris at sem onsectetur adipiscing elit.</p>
+                </div>
+                <div class="satelite">
+                    <p>Cuenta Satélite de Cultura</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="button button2"> Ver más</a>
+                </div>
+            </div>
+        </section>
+        <section class="container searchSection statistics">
             <a href="#" class="button button2">Filtrar búsqueda</a>
+            <p class="publicationsCount">15 publicaciones</p>
             <div class="filtersearch">
                 <form action="" class="searchFilterForm">
                     <div class="inputSearch">
                         <input type="text" name="item" id="item" placeholder="Buscar ...">
-                    </div>
-                    <div class="inputSearch">
-                        <select name="cat" id="cat">
-                            <option value="" disabled selected></option>
-                            <option value="">Categoría1</option>
-                            <option value="">Categoría2</option>
-                            <option value="">Categoría3</option>
-                        </select>
-                        <span>Categoría</span>
-                        <img src="assets/downarrow.png" alt="">
                     </div>
                     <div class="inputSearch">
                         <select name="subcat" id="subcat">
@@ -113,26 +115,6 @@
                             <option value="">Subcategoría3</option>
                         </select>
                         <span>Subcategoría</span>
-                        <img src="assets/downarrow.png" alt="">
-                    </div>
-                    <div class="inputSearch">
-                        <select name="ter" id="ter">
-                            <option value="" disabled selected></option>
-                            <option value="">Territorio1</option>
-                            <option value="">Territorio2</option>
-                            <option value="">Territorio3</option>
-                        </select>
-                        <span>Territorio</span>
-                        <img src="assets/downarrow.png" alt="">
-                    </div>
-                    <div class="inputSearch">
-                        <select name="sect" id="sect">
-                            <option value="" disabled selected></option>
-                            <option value="">Sector1</option>
-                            <option value="">Sector2</option>
-                            <option value="">Sector3</option>
-                        </select>
-                        <span>Subsector</span>
                         <img src="assets/downarrow.png" alt="">
                     </div>
                     <button type="submit" name="send" class="button button2">Buscar</button>
@@ -147,66 +129,115 @@
                 </div>
             </div>
             <div class="results">
-                <a href="ficha.html" class="resultSingle">
-                    <img src="assets/ficha2.jpg" alt="">
+                <div class="resultSingle">
                     <div class="resultText">
-                        <h2 class="coloredTitle">Titulo de ficha</h2>
+                        <h2 class="coloredTitle">Titulo de estadística</h2>
                         <p>Consec tetur adipi scing elit. Nulla scelerisque commodo mauris at sem onsectetur adipiscing
-                            elit.</p>
-                        <div class="seeMore">
-                            <p>Ver ficha</p>
-                            <img src="assets/downarrow.png" alt="">
+                            elit.
+                        </p>
+                        <div class="downLinks">
+                            <a href="ficha.html" class="seeMore">
+                                <p>Ver estadística</p>
+                                <img src="assets/downarrow.png" alt="">
+                            </a>
+                            <div class="downloadFiles">
+                                <a href="#">
+                                    <img src="assets/pdf-icon.png" alt="">
+                                    Descargar PDF
+                                </a>
+                                <a href="#">
+                                    <img src="assets/excel-icon.png" alt="">
+                                    Descargar Excel
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="fichaDate">
                         <p>Actualizada - <span>23/03/2022</span></p>
                     </div>
-                </a>
-                <a href="ficha.html" class="resultSingle">
-                    <img src="assets/ficha2.jpg" alt="">
+                </div>
+                <div class="resultSingle">
                     <div class="resultText">
-                        <h2 class="coloredTitle">Titulo de ficha</h2>
+                        <h2 class="coloredTitle">Titulo de estadística</h2>
                         <p>Consec tetur adipi scing elit. Nulla scelerisque commodo mauris at sem onsectetur adipiscing
-                            elit.</p>
-                        <div class="seeMore">
-                            <p>Ver ficha</p>
-                            <img src="assets/downarrow.png" alt="">
+                            elit.
+                        </p>
+                        <div class="downLinks">
+                            <a href="ficha.html" class="seeMore">
+                                <p>Ver estadística</p>
+                                <img src="assets/downarrow.png" alt="">
+                            </a>
+                            <div class="downloadFiles">
+                                <a href="#">
+                                    <img src="assets/pdf-icon.png" alt="">
+                                    Descargar PDF
+                                </a>
+                                <a href="#">
+                                    <img src="assets/excel-icon.png" alt="">
+                                    Descargar Excel
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="fichaDate">
                         <p>Actualizada - <span>23/03/2022</span></p>
                     </div>
-                </a>
-                <a href="ficha.html" class="resultSingle">
-                    <img src="assets/ficha2.jpg" alt="">
+                </div>
+                <div class="resultSingle">
                     <div class="resultText">
-                        <h2 class="coloredTitle">Titulo de ficha</h2>
+                        <h2 class="coloredTitle">Titulo de estadística</h2>
                         <p>Consec tetur adipi scing elit. Nulla scelerisque commodo mauris at sem onsectetur adipiscing
-                            elit.</p>
-                        <div class="seeMore">
-                            <p>Ver ficha</p>
-                            <img src="assets/downarrow.png" alt="">
+                            elit.
+                        </p>
+                        <div class="downLinks">
+                            <a href="ficha.html" class="seeMore">
+                                <p>Ver estadística</p>
+                                <img src="assets/downarrow.png" alt="">
+                            </a>
+                            <div class="downloadFiles">
+                                <a href="#">
+                                    <img src="assets/pdf-icon.png" alt="">
+                                    Descargar PDF
+                                </a>
+                                <a href="#">
+                                    <img src="assets/excel-icon.png" alt="">
+                                    Descargar Excel
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="fichaDate">
                         <p>Actualizada - <span>23/03/2022</span></p>
                     </div>
-                </a>
-                <a href="ficha.html" class="resultSingle">
-                    <img src="assets/ficha2.jpg" alt="">
+                </div>
+                <div class="resultSingle">
                     <div class="resultText">
-                        <h2 class="coloredTitle">Titulo de ficha</h2>
+                        <h2 class="coloredTitle">Titulo de estadística</h2>
                         <p>Consec tetur adipi scing elit. Nulla scelerisque commodo mauris at sem onsectetur adipiscing
-                            elit.</p>
-                        <div class="seeMore">
-                            <p>Ver ficha</p>
-                            <img src="assets/downarrow.png" alt="">
+                            elit.
+                        </p>
+                        <div class="downLinks">
+                            <a href="ficha.html" class="seeMore">
+                                <p>Ver estadística</p>
+                                <img src="assets/downarrow.png" alt="">
+                            </a>
+                            <div class="downloadFiles">
+                                <a href="#">
+                                    <img src="assets/pdf-icon.png" alt="">
+                                    Descargar PDF
+                                </a>
+                                <a href="#">
+                                    <img src="assets/excel-icon.png" alt="">
+                                    Descargar Excel
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="fichaDate">
                         <p>Actualizada - <span>23/03/2022</span></p>
                     </div>
-                </a>
+                </div>
+                
             </div>
             <div class="pag">
                 <div class="prev inactive">
@@ -222,66 +253,6 @@
                 </div>
                 <div class="next active">
                     <img src="assets/prevarrow.png" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="fichaSlider">
-            <div class="sliderPrime">
-                <div class="prev">
-                    <img src="assets/prev.png" alt="">
-                </div>
-                <div class="fichaSliderMain sliderMain">
-                    <div class="fichaSlides sliderGroup">
-                        <div class="fichaSliderSingle sliderSingle">
-                            <picture>
-                                <source media="(min-width: 680px)" srcset="assets/ficha.jpg">
-                                <img src="assets/ficha-mob.jpg" alt="">
-                            </picture>
-                            <div class="fichaText">
-                                <p class="fichamark">Ficha destacada</p>
-                                <h2>Lorem ipsum dolor</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quo.</p>
-                                <a href="" class="button button2">Ver más</a>
-                            </div>
-                        </div>
-                        <div class="fichaSliderSingle sliderSingle">
-                            <picture>
-                                <source media="(min-width: 680px)" srcset="assets/ficha.jpg">
-                                <img src="assets/ficha-mob.jpg" alt="">
-                            </picture>
-                            <div class="fichaText">
-                                <p class="fichamark">Ficha destacada</p>
-                                <h2>Lorem ipsum dolor</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quo.</p>
-                                <a href="" class="button button2">Ver más</a>
-                            </div>
-                        </div>
-                        <div class="fichaSliderSingle sliderSingle">
-                            <picture>
-                                <source media="(min-width: 680px)" srcset="assets/ficha.jpg">
-                                <img src="assets/ficha-mob.jpg" alt="">
-                            </picture>
-                            <div class="fichaText">
-                                <p class="fichamark">Ficha destacada</p>
-                                <h2>Lorem ipsum dolor</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quo.</p>
-                                <a href="" class="button button2">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="next">
-                    <img src="assets/prev.png" alt="">
-                </div>
-            </div>
-            <div class="pag">
-                <div class="bullets">
-
-                </div>
-                <div>
-                    <img src="assets/prev-white.png" alt="">
-                    <img src="assets/prev-white.png" alt="">
                 </div>
             </div>
         </section>
@@ -346,9 +317,7 @@
         </div>
     </footer>
     <script src="js/global.js"></script>
-    <script src="js/slider.js"></script>
     <script src="js/search.js"></script>
-
 </body>
 
 </html>

@@ -1,0 +1,76 @@
+.estadHero {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+.estadTitle {
+    width: 60%;
+}
+.estadTitle .coloredText {
+    font-size: 0.875rem;
+}
+.satelite {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.satelite p {
+    font-family: "Oswald-SBold";
+    color: #FF5900;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.statistics .resultSingle {
+    padding: 1.25rem 0.8rem;
+}
+.statistics .resultText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.downLinks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+.downloadFiles {
+    display: flex;
+    align-content: center;
+    gap: 1rem;
+}
+.downloadFiles a {
+    color: #FF5900;
+    text-transform: uppercase;
+    font-family: "WSans-Light";
+    font-size: 0.675rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: underline;
+}
+.downloadFiles a img {
+    width: 15px;
+}
+.fichaSlider.novelty {
+background-color: #00B8AB;
+}
+@media screen and (min-width: 420px) {
+    .downLinks {
+        justify-content: space-between;
+        gap: 0.8rem;
+    }  
+}
+@media screen and (min-width: 560px) {
+    .downloadFiles a {
+        font-size: 0.875rem;
+    }
+    .statistics .results .resultText {
+        padding: 1.2rem 1.5rem;
+    }
+}
