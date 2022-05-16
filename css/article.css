@@ -1,0 +1,110 @@
+.articleNovelty {
+    margin-top: 2rem;
+}
+
+.noveltyTitle {
+    padding: 0 2rem;
+}
+
+.subNovelty {
+    font-family: "WSans-Regular";
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ff5900;
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.noveltyTitle h1 {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.noveltyText {
+    font-family: "WSans-Regular";
+    font-size: 0.875rem;
+    color: #4e4f5d;
+    padding: 2rem;
+    line-height: 1.2;
+}
+
+.tags {
+    padding: 1rem 0 2rem;
+    border-top: 1px solid rgb(0 0 0 / 10%);
+    border-bottom: 1px solid rgb(0 0 0 / 10%);
+    margin-bottom: 1rem;
+}
+
+.fichaGeneral.fichaNovelty .back {
+    font-family: "WSans-Regular";
+    font-size: 0.875rem;
+    color: #FF5900;
+}
+
+@media screen and (min-width: 520px) {
+    .subNovelty {
+        font-size: 1.25rem;
+    }
+
+    .noveltyTitle h1 {
+        font-size: 1.75rem;
+    }
+
+    .noveltyText {
+        font-size: 1rem;
+    }
+
+    .fichaGeneral.fichaNovelty h2 {
+        font-size: 1.375rem;
+    }
+
+    .tags {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:680px) {
+    .articleNovelty {
+        padding: 0 2.7rem;
+    }
+
+    .noveltyTitle {
+        padding: 0;
+    }
+
+    .noveltyText {
+        padding: 2rem 0;
+    }
+
+    .articleNoveltyContent img {
+        border-radius: 10px;
+    }
+
+    .fichaGeneral.fichaNovelty {
+        border-radius: 10px;
+        padding: 2rem 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .articleNovelty {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 3rem;
+        max-width: 1300px;
+        margin: 2rem auto;
+    }
+
+    .noveltyTitle h1 {
+        font-size: 2rem;
+    }
+
+    .fichaGeneral.fichaNovelty {
+        margin: 0;
+    }
+
+}
