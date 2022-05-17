@@ -98,7 +98,7 @@
     border-bottom: 2px solid #FF5900;
 }
 
-.tabs .share {
+.share {
     display: none;
 }
 
@@ -264,7 +264,7 @@
         margin: 0;
     }
 
-    .tabs .share {
+    .share {
         display: flex;
         align-items: center;
         gap: 0.5rem;
@@ -313,7 +313,7 @@
     .fichaContentText p,
     .fichaContentButtons a:first-of-type,
     .fichaGeneral p,
-    .tabs .share {
+    .share {
         font-size: 0.875rem;
     }
 }
@@ -344,7 +344,7 @@
     .fichaContentText p,
     .fichaContentButtons a:first-of-type,
     .fichaGeneral p,
-    .tabs .share {
+    .share {
         font-size: 1rem;
     }
 

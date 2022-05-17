@@ -21,6 +21,7 @@
 
 .searchSection a {
     align-self: flex-end;
+    text-align: center;
 }
 
 .filtersearch {
@@ -124,6 +125,7 @@
     margin: 0.2rem 0;
     font-family: "WSans-Light";
     font-size: 0.625rem;
+    text-align: left;
     color: #707070;
 }
 
@@ -264,7 +266,7 @@
 }
 
 @media screen and (min-width: 900px) {
-    .searchSection>a {
+    #filterSearch {
         display: none;
     }
 

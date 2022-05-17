@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/ficha.css">
-    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/novelty.css">
     <title>SiCultura- Inicio</title>
 </head>
 
@@ -36,11 +37,11 @@
                     <p>Menú</p>
                 </div>
                 <div class="deskMenu">
-                    <a href="index.html" class="active">Inicio</a>
+                    <a href="index.html">Inicio</a>
                     <a href="directorio.html">Directorio</a>
                     <a href="mapa.html">Mapa</a>
                     <a href="estadisticas.html">Estadísticas</a>
-                    <a href="novedades.html">Novedades</a>
+                    <a href="novedades.html" class="active">Novedades</a>
                     <a href="#">Documentos</a>
                 </div>
                 <form action="" class="search">
@@ -134,6 +135,133 @@
                 <a href="index.html" class="back">Regresar al inicio</a>
             </div>
         </section>
+        <section class="container searchSection noveltySearch">
+            <div class="otherArticles">
+                <h2 class="coloredTitle">También te podría interesar</h2>
+                <a class="button button2" id="filterSearch">Filtrar búsqueda</a>
+            </div>
+            <div class="filtersearch">
+                <form action="" class="searchFilterForm">
+                    <div class="inputSearch">
+                        <input type="text" name="item" id="item" placeholder="Buscar ...">
+                    </div>
+                    <div class="inputSearch">
+                        <select name="subcat" id="subcat">
+                            <option value="" disabled selected></option>
+                            <option value="">Subcategoría1</option>
+                            <option value="">Subcategoría2</option>
+                            <option value="">Subcategoría3</option>
+                        </select>
+                        <span>Subcategoría</span>
+                        <img src="assets/downarrow.png" alt="">
+                    </div>
+                    <button type="submit" name="send" class="button button2">Buscar</button>
+                    <button type="submit" name="clean" class="button button2 button5">Limpiar Filtros</button>
+                </form>
+                <div class="changeGrid">
+                    <input type="radio" name="grid" id="grid">
+                    <label for="grid"></label>
+                    <input type="radio" name="grid" id="line" checked>
+                    <label for="line"></label>
+                    <p>Listado de Fichas</p>
+                </div>
+            </div>
+            <div class="results noveltyResults">
+                <a href="#" class="resultText">
+                    <img src="assets/ficha-mob.jpg" alt="">
+                    <div class="noveltyText">
+                        <h2 class="coloredTitle">Lorem ipsum dolor at simet
+                            at precatem et
+                        </h2>
+                        <p>Consec tetur adipi scing elit. Nulla scelerisque commodo mauris at sem onsectetur
+                            adipiscing
+                            elit.
+                        </p>
+                        <div class="moreDate">
+                            <div class="seeMore">
+                                <p>Ver más</p>
+                                <img src="assets/downarrow.png" alt="">
+                            </div>
+                            <p>23/03/2022</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="resultText">
+                    <img src="assets/ficha-mob.jpg" alt="">
+                    <div class="noveltyText">
+                        <h2 class="coloredTitle">Lorem ipsum dolor at simet
+                            at precatem et
+                        </h2>
+                        <p>Consec tetur adipi scing elit. Nulla scelerisque commodo mauris at sem onsectetur
+                            adipiscing
+                            elit.
+                        </p>
+                        <div class="moreDate">
+                            <div class="seeMore">
+                                <p>Ver más</p>
+                                <img src="assets/downarrow.png" alt="">
+                            </div>
+                            <p>23/03/2022</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="resultText">
+                    <img src="assets/ficha-mob.jpg" alt="">
+                    <div class="noveltyText">
+                        <h2 class="coloredTitle">Lorem ipsum dolor at simet
+                            at precatem et
+                        </h2>
+                        <p>Consec tetur adipi scing elit. Nulla scelerisque commodo mauris at sem onsectetur
+                            adipiscing
+                            elit.
+                        </p>
+                        <div class="moreDate">
+                            <div class="seeMore">
+                                <p>Ver más</p>
+                                <img src="assets/downarrow.png" alt="">
+                            </div>
+                            <p>23/03/2022</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="resultText">
+                    <img src="assets/ficha-mob.jpg" alt="">
+                    <div class="noveltyText">
+                        <h2 class="coloredTitle">Lorem ipsum dolor at simet
+                            at precatem et
+                        </h2>
+                        <p>Consec tetur adipi scing elit. Nulla scelerisque commodo mauris at sem onsectetur
+                            adipiscing
+                            elit.
+                        </p>
+                        <div class="moreDate">
+                            <div class="seeMore">
+                                <p>Ver más</p>
+                                <img src="assets/downarrow.png" alt="">
+                            </div>
+                            <p>23/03/2022</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="pag">
+                <div class="prev inactive">
+                    <img src="assets/prevarrow.png" alt="">
+                </div>
+                <div class="pages">
+                    <div class="pageSingle active">1</div>
+                    <div class="pageSingle">2</div>
+                    <div class="pageSingle">3</div>
+                    <div class="pageSingle">4</div>
+                    <div>...</div>
+                    <div class="pageSingle">10</div>
+                </div>
+                <div class="next active">
+                    <img src="assets/prevarrow.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="container footer">
         <div>
@@ -195,7 +323,7 @@
         </div>
     </footer>
     <script src="js/global.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/search.js"></script>
 </body>
 
 </html>
