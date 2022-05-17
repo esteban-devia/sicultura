@@ -37,6 +37,7 @@
     font-family: "Oswald-SBold";
     src: url(fonts/Oswald-SemiBold.ttf);
 }
+
 @font-face {
     font-family: "Oswald-Bold";
     src: url(fonts/Oswald-Bold.ttf);
@@ -197,6 +198,10 @@ button {
     font-size: 0.625rem;
     color: #5B7ECF;
     margin-left: 0.5rem;
+}
+
+.headerMid {
+    padding: 2rem 2rem 0;
 }
 
 .headerLast {
@@ -464,12 +469,14 @@ footer li a {
 .fichaSlider .pag img:last-of-type {
     transform: rotateY(180deg);
 }
+
 p.publicationsCount {
     font-family: 'WSans-SBold';
     color: #FF5900;
     margin: 0.5rem 0;
     align-self: flex-end;
 }
+
 @media screen and (min-width: 420px) {
     .logos img {
         max-width: 100%;
@@ -480,6 +487,7 @@ p.publicationsCount {
     .container {
         padding: 02rem;
     }
+
     .directory {
         padding: 2rem;
         border-radius: 20px;
@@ -532,6 +540,7 @@ p.publicationsCount {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        padding: 2rem 2rem 0;
     }
 
     .headerFirst a {
@@ -550,10 +559,11 @@ p.publicationsCount {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        padding: 2rem 2rem 0;
     }
 
     .headerLast {
-        padding: 0 0.7rem;
+        padding: 0 2rem;
         background-color: unset;
     }
 
@@ -720,7 +730,7 @@ p.publicationsCount {
     }
 }
 
-@media screen and (min-width: 680px) and (max-width: 860px) {
+@media screen and (min-width: 680px) and (max-width: 876px) {
     .menu {
         position: relative;
     }
@@ -730,14 +740,18 @@ p.publicationsCount {
         top: 100%;
         right: 0;
     }
+
     .firstSection {
         margin-top: 4rem !important;
     }
 }
+
 @media screen and (min-width: 900px) {
     .publicationsCount {
-font-size: 1.25rem;    }
+        font-size: 1.25rem;
+    }
 }
+
 @media screen and (min-width: 1112px) {
     h2 {
         font-size: 2.25rem;
@@ -768,7 +782,7 @@ font-size: 1.25rem;    }
     }
 
     .deskMenu {
-        gap: 3rem;
+        gap: 2rem;
     }
 
     .deskMenu a.active {
@@ -822,9 +836,11 @@ font-size: 1.25rem;    }
     .footerLogoD {
         align-self: baseline;
     }
+
     .footerLogoD img {
         align-self: baseline;
     }
+
     .footerLogo img {
         width: 60%;
     }
@@ -865,15 +881,10 @@ font-size: 1.25rem;    }
 
 @media screen and (min-width: 1388px) {
 
-    .container,
-    header {
+    .container {
         max-width: 1300px;
         margin-left: auto;
         margin-right: auto;
         padding: 0;
-    }
-
-    .menu {
-        margin: 0;
     }
 }
