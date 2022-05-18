@@ -8,6 +8,10 @@
     cursor: pointer;
 }
 
+.heroBanner.sliderPrime {
+    max-width: initial;
+}
+
 .heroSlider {
     overflow: hidden;
 }

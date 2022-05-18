@@ -22,8 +22,8 @@
                 <a href="index.html"><img src="assets/siculturalogo.png" alt="Logo SiCultura"></a>
             </div>
             <div class="session">
-                <a class="button" href="#">Solicitar Cuenta</a>
-                <a href="">Iniciar Sesión</a>
+                <a class="button" href="registro.html">Solicitar Cuenta</a>
+                <a href="login.html">Iniciar Sesión</a>
             </div>
         </div>
         <div class="headerLast">

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/manifest.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>SiCultura- Inicio</title>
 </head>
 
@@ -31,12 +31,12 @@
         <div class="headerLast">
             <div class="menu">
                 <div id="ham">
-                    <img src="assets/ham.png" alt="">
+                    <img src="assets/ham.png" alt="" id="ham">
                     <p>Menú</p>
                 </div>
                 <div class="deskMenu">
                     <a href="index.html">Inicio</a>
-                    <a href="directorio.html" class="active">Directorio</a>
+                    <a href="directorio.html">Directorio</a>
                     <a href="mapa.html">Mapa</a>
                     <a href="estadisticas.html">Estadísticas</a>
                     <a href="novedades.html">Novedades</a>
@@ -86,81 +86,85 @@
         </div>
     </header>
     <main>
-        <section class="firstSection manifestSection container">
-            <div class="manifestTitle">
-                <div class="manifestTitleText">
-                    <div>
-                        <img src="assets/hat.png" alt="">
-                    </div>
-                    <h1>Manifestaciones culturales</h1>
-                    <p>Consec tetur adipi scing elit. Nulla scelerisque commodo mauris at sem onsectetur adipiscing
-                        elit.</p>
-                    <a href="">Ver más</a>
+        <section class="firstSection container">
+            <div class="formContainer">
+                <div class="decorImage register">
+                    <img src="assets/patrones-bg.jpg" alt="">
                 </div>
-                <div class="manifestTitleCount">
-                    <p class="countResult">87 Fichas</p>
-                    <p>en el directorio</p>
-                    <a href="#" class="button">
-                        <img src="assets/map-icon-button.png" alt="">
-                        Ver en el mapa
-                    </a>
-                </div>
-            </div>
-            <div class="manifestAside">
-                <h2>Directorio</h2>
-                <form action="" class="search">
-                    <div>
-                        <input type="search" name="searchDir" id="searchDir" placeholder="Buscar...">
-                        <button type="submit" name="sendIcon" onclick="send()">
-                            <img src="assets/search-icon.png" alt="search-icon">
-                        </button>
+                <form action="" class="registration">
+                    <div class="inputGroup">
+                        <label for="fname">Nombres</label>
+                        <div class="inputSingle">
+                            <input type="text" name="fname" id="fname">
+                        </div>
                     </div>
+                    <div class="inputGroup">
+                        <label for="lname">Apellidos</label>
+                        <div class="inputSingle">
+                            <input type="text" name="lname" id="lname">
+                        </div>
+                    </div>
+                    <div class="inputGroup">
+                        <label for="nationality">Nacionalidad</label>
+                        <div class="inputSingle">
+                            <input type="text" name="nationality" id="nationality">
+                        </div>
+                    </div>
+                    <div class="inputGroup">
+                        <label for="country">País de residencia</label>
+                        <div class="inputSingle">
+                            <select name="country" id="country">
+                                <option value="" selected hidden>
+                                <option value="">Country 1</option>
+                                <option value="">Country 2</option>
+                                <option value="">Country 3</option>
+                                </option>
+                            </select>
+                            <img src="assets/caretdown.svg" alt="" class="downSelect">
+                        </div>
+                    </div>
+                    <div class="inputGroup">
+                        <label for="email">Correo electrónico</label>
+                        <div class="inputSingle">
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+                    <div class="inputGroup">
+                        <label for="gender">Género</label>
+                        <div class="inputSingle">
+                            <select name="gender" id="gender">
+                                <option value="" selected hidden>
+                                <option value="">Masculino</option>
+                                <option value="">Femenino</option>
+                                </option>
+                            </select>
+                            <img src="assets/caretdown.svg" alt="" class="downSelect">
+                        </div>
+                    </div>
+                    <div class="inputGroup">
+                        <label for="age">Edad</label>
+                        <div class="inputSingle">
+                            <input type="number" name="age" id="age">
+                        </div>
+                    </div>
+                    <div class="inputGroup">
+                        <label for="perfil">¿En qué perfil me identifico?</label>
+                        <div class="inputSingle">
+                            <select name="perfil" id="perfil">
+                                <option value="" selected hidden>
+                                <option value="">Perfil 1</option>
+                                <option value="">Perfil 2</option>
+                                <option value="">Perfil 3</option>
+                                </option>
+                            </select>
+                            <img src="assets/caretdown.svg" alt="" class="downSelect">
+                        </div>
+                    </div>
+                    <div class="sessionButtons">
+                        <button type="submit" class="button button2">registrarse</button>
+                    </div>
+                    <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
                 </form>
-                <div class="manifestMenu">
-                    <a href="#" class="active">Manifestaciones culturales</a>
-                    <a href="#">Programas oficiales</a>
-                    <a href="#">Espacios culturales</a>
-                    <a href="#">Agentes culturales</a>
-                    <a href="#">Eventos culturales</a>
-                </div>
-                <a href="index.html" class="back">Regresar al inicio</a>
-            </div>
-            <div class="manifestCards">
-                <div class="manifestCardSingle">
-                    <img src="assets/orales.png" alt="">
-                    <h3>Tradiciones y expresiones orales</h3>
-                    <p>Consec tetur adipi scing elit. Nulla scelerisque.</p>
-                </div>
-                <div class="manifestCardSingle">
-                    <img src="assets/artes.png" alt="">
-                    <h3>Artes del espectáculo</h3>
-                    <p>Consec tetur adipi scing elit. Nulla scelerisque.</p>
-                </div>
-                <div class="manifestCardSingle">
-                    <img src="assets/artesanal.png" alt="">
-                    <h3>Técnicas artesanales tradicionales</h3>
-                    <p>Consec tetur adipi scing elit. Nulla scelerisque.</p>
-                </div>
-                <div class="manifestCardSingle">
-                    <img src="assets/rituales.png" alt="">
-                    <h3>Usos sociales, rituales y actos festivos</h3>
-                    <p>Consec tetur adipi scing elit. Nulla scelerisque.</p>
-                </div>
-                <div class="manifestCardSingle">
-                    <img src="assets/medicinas.png" alt="">
-                    <h3>Medicionas tradicionales</h3>
-                    <p>Consec tetur adipi scing elit. Nulla scelerisque.</p>
-                </div>
-                <div class="manifestCardSingle">
-                    <img src="assets/cocinas.png" alt="">
-                    <h3>Cocinas tradicionales</h3>
-                    <p>Consec tetur adipi scing elit. Nulla scelerisque.</p>
-                </div>
-                <div class="manifestCardSingle">
-                    <img src="assets/naturaleza.png" alt="">
-                    <h3>Conocimientos y usos relacionados con la naturaleza</h3>
-                    <p>Consec tetur adipi scing elit. Nulla scelerisque.</p>
-                </div>
             </div>
         </section>
     </main>
@@ -223,11 +227,6 @@
             <p>Ciudad de Panamá</p>
         </div>
     </footer>
-    <script>
-        function send() {
-            window.location.href = "busqueda.html";
-        }
-    </script>
     <script src="js/global.js"></script>
 </body>
 
