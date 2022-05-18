@@ -60,6 +60,11 @@
     -webkit-appearance: none;
 }
 
+.registration .inputGroup .inputSingle input,
+.registration .inputGroup .inputSingle select {
+    padding: 0.5rem 1rem;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -186,7 +191,7 @@ input[type=number] {
     }
 
     .registration .inputGroup label {
-        width: 25%;
+        width: 7.5rem;
     }
 
     .registration .inputSingle {
@@ -213,6 +218,11 @@ input[type=number] {
     .inputGroup .inputSingle input {
         padding: 0.7rem 2rem;
         padding-left: 3rem;
+    }
+
+    .registration .inputGroup .inputSingle input,
+    .registration .inputGroup .inputSingle select {
+        padding: 0.7rem 1rem;
     }
 
     .inputGroup .inputSingle select {
