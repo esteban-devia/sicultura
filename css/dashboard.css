@@ -1,0 +1,239 @@
+.dashboardClose {
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.sessionInfo {
+    display: none;
+    background-color: #FFF;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    right: 0;
+    align-items: flex-start;
+    gap: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 1px 7px 0px rgb(112 112 112 / 27%);
+    padding: 1rem 0 2rem;
+    padding-left: 0;
+}
+
+.infoBold {
+    font-family: "WSans-Bold";
+    font-size: 1rem;
+}
+
+.infoRegular {
+    font-family: "WSans-Regular";
+    font-size: 0.875rem;
+}
+
+.dateInfo,
+.notification,
+.user {
+    padding: 0.5rem 1.5rem;
+    height: 100%;
+}
+
+.notification,
+.user {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.user {
+    cursor: pointer;
+}
+
+.notifIcon sup,
+.closeSession {
+    display: none;
+}
+
+.notifIcon img {
+    width: 25px;
+}
+
+.notifIcon.active,
+.user {
+    position: relative;
+}
+
+.notifIcon.active sup {
+    display: inline;
+    font-family: 'WSans-Regular';
+    color: #FFF;
+    font-size: 0.625rem;
+    background-color: #FF5900;
+    padding: 3px 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 65%;
+}
+
+.user img#infoPhoto {
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user img:last-child {
+    margin-left: 1rem;
+}
+
+.closeSession.active {
+    position: absolute;
+    display: block;
+    bottom: -2rem;
+    padding: 0.5rem;
+    right: 0;
+    padding-left: 1.5rem;
+    font-family: 'WSans-Regular';
+    color: #707070;
+    background-color: #f8f8f8;
+    width: -webkit-fill-available;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.inputLine {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.registration.dashboard .inputGroup .inputSingle input {
+    padding: 0.5rem 2rem;
+}
+
+.registration.dashboard {
+    box-shadow: none;
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.inputLine .user {
+    padding: 0;
+}
+
+.inputLine .user img {
+    max-width: 137px;
+    width: 35%;
+    border-radius: 50%;
+}
+
+.formContainer form .inputLine p {
+    text-align: left;
+}
+
+.formContainer form .inputLine .infoBold {
+    font-family: "Oswald-Bold";
+    font-size: 1rem;
+    color: #0844E1;
+}
+
+.deleteAccount {
+    border: none;
+    background-color: white;
+    font-family: 'WSans-Regular';
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #ff0000;
+}
+
+
+@media screen and (min-width: 520px) {
+    .registration.dashboard .inputGroup {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .deleteAccount {
+        font-size: 1rem;
+    }
+
+    .dashboardMain {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 4rem;
+    }
+
+    .dashboardMain .searchSection {
+        padding-top: 0;
+    }
+
+    .inputLine .user {
+        width: 50%;
+    }
+
+    .registration.dashboard .inputGroup .inputSingle input {
+        padding: 0.7rem 3rem;
+    }
+
+    .dashboardMain .formContainer {
+        width: 100%;
+    }
+
+    .registration.dashboard .inputGroup {
+        flex-direction: column;
+        align-items: inherit;
+        gap: 0;
+        width: 50%;
+        margin: 0;
+    }
+
+    .inputLine {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .dashboardClose {
+        display: none;
+    }
+
+    .sessionInfo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-height: 60px;
+        height: 100%;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .notification {
+        border-right: 1px solid #707070;
+        border-left: 1px solid #707070;
+    }
+
+    .registration.dashboard .sessionButtons {
+        width: 60%;
+        gap: 1rem;
+        flex-direction: row-reverse;
+        align-self: flex-start;
+        justify-content: flex-end;
+        margin: 1rem 0;
+    }
+
+    .closeSession.active {
+        border-radius: 0;
+        margin: 0;
+        padding-left: 0.5rem;
+        padding-right: 1.5rem;
+        text-align: right;
+    }
+
+    .deleteAccount {
+        text-align: left;
+    }
+}

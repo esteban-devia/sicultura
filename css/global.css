@@ -175,6 +175,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    position: relative;
 }
 
 .logos {
@@ -182,10 +183,6 @@ button {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-}
-
-.logos img {
-    max-width: 50%;
 }
 
 .session {
@@ -475,12 +472,6 @@ p.publicationsCount {
     color: #FF5900;
     margin: 0.5rem 0;
     align-self: flex-end;
-}
-
-@media screen and (min-width: 420px) {
-    .logos img {
-        max-width: 100%;
-    }
 }
 
 @media screen and (min-width: 520px) {

@@ -102,6 +102,10 @@
     display: none;
 }
 
+.share img {
+    cursor: pointer;
+}
+
 .fichaContentText p {
     font-family: "WSans-Regular";
     font-size: 0.875rem;

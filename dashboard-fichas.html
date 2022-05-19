@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/manifest.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/ficha.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>SiCultura- Inicio</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerFirst">
+            <a href="#">Sobre Sicultura</a>
+            <a href="#">Definiciones</a>
+            <a href="#">Datos abiertos</a>
+            <a href="#">Contacto</a>
+        </div>
+        <div class="headerMid">
+            <div class="logos">
+                <a href="#"><img src="assets/repdomlogo.png" alt="Logo Ministerio de Cultura Rep.Dom."></a>
+                <a href="index.html"><img src="assets/siculturalogo.png" alt="Logo SiCultura"></a>
+            </div>
+            <p class="button button2 dashboardClose">Notificaciones</p>
+            <div class="sessionInfo">
+                <div class="dateInfo">
+                    <p class="infoBold">03:43:35</p>
+                    <p class="infoRegular">30/02/2022</p>
+                </div>
+                <div class="notification">
+                    <div class="notifIcon active">
+                        <img src="assets/bell.svg" alt="">
+                        <sup>2</sup>
+                    </div>
+                    <div class="notifIcon">
+                        <img src="assets/Envelope.svg" alt="">
+                        <sup>1</sup>
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="assets/photo.jpg" alt="" id="infoPhoto">
+                    <div class="userName">
+                        <p class="infoBold">Juan Pérez</p>
+                        <p class="infoRegular">Usuario</p>
+                    </div>
+                    <img src="assets/caretdown.svg" alt="">
+                    <a class="closeSession">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+        <div class="headerLast">
+            <div class="menu">
+                <div id="ham">
+                    <img src="assets/ham.png" alt="" id="ham">
+                    <p>Menú</p>
+                </div>
+                <div class="deskMenu">
+                    <a href="index.html">Inicio</a>
+                    <a href="directorio.html">Directorio</a>
+                    <a href="mapa.html">Mapa</a>
+                    <a href="estadisticas.html">Estadísticas</a>
+                    <a href="novedades.html">Novedades</a>
+                    <a href="#">Documentos</a>
+                </div>
+                <form action="" class="search">
+                    <div>
+                        <input type="search" name="searchSite" id="searchSite" placeholder="Buscar en el sitio">
+                        <button type="submit"><img src="assets/search-icon.png" alt="search-icon"></button>
+                    </div>
+                </form>
+            </div>
+            <nav class="mobileNav">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="directorio.html">Directorio</a>
+                    </li>
+                    <li>
+                        <a href="mapa.html">Mapa</a>
+                    </li>
+                    <li>
+                        <a href="estadisticas.html">Estadísticas</a>
+                    </li>
+                    <li>
+                        <a href="novedades.html">Novedades</a>
+                    </li>
+                    <li>
+                        <a href="#">Documentos</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre Sicultura</a>
+                    </li>
+                    <li>
+                        <a href="#">Definiciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Datos Abiertos</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="firstSection container">
+            <div class="dashboardMain">
+                <div class="searchSection">
+                    <a class="button button2" id="filterSearch">Filtrar búsqueda</a>
+                    <div class="filtersearch">
+                        <form action="" class="searchFilterForm">
+                            <div class="inputSearch">
+                                <input type="text" name="item" id="item" placeholder="Buscar ...">
+                            </div>
+                            <div class="inputSearch">
+                                <select name="cat" id="cat">
+                                    <option value="" disabled selected></option>
+                                    <option value="">Categoría1</option>
+                                    <option value="">Categoría2</option>
+                                    <option value="">Categoría3</option>
+                                </select>
+                                <span>Categoría</span>
+                                <img src="assets/downarrow.png" alt="">
+                            </div>
+                            <div class="inputSearch">
+                                <select name="subcat" id="subcat">
+                                    <option value="" disabled selected></option>
+                                    <option value="">Subcategoría1</option>
+                                    <option value="">Subcategoría2</option>
+                                    <option value="">Subcategoría3</option>
+                                </select>
+                                <span>Subcategoría</span>
+                                <img src="assets/downarrow.png" alt="">
+                            </div>
+                            <div class="inputSearch">
+                                <select name="ter" id="ter">
+                                    <option value="" disabled selected></option>
+                                    <option value="">Territorio1</option>
+                                    <option value="">Territorio2</option>
+                                    <option value="">Territorio3</option>
+                                </select>
+                                <span>Territorio</span>
+                                <img src="assets/downarrow.png" alt="">
+                            </div>
+                            <div class="inputSearch">
+                                <select name="sect" id="sect">
+                                    <option value="" disabled selected></option>
+                                    <option value="">Sector1</option>
+                                    <option value="">Sector2</option>
+                                    <option value="">Sector3</option>
+                                </select>
+                                <span>Subsector</span>
+                                <img src="assets/downarrow.png" alt="">
+                            </div>
+                            <button type="submit" name="send" class="button button2">Buscar</button>
+                            <button type="submit" name="clean" class="button button2 button5">Limpiar Filtros</button>
+                        </form>
+                        <div class="changeGrid">
+                            <input type="radio" name="grid" id="grid">
+                            <label for="grid"></label>
+                            <input type="radio" name="grid" id="line" checked>
+                            <label for="line"></label>
+                            <p>Listado de Fichas</p>
+                        </div>
+                    </div>
+                    <div class="results">
+                        <a href="ficha.html" class="resultSingle">
+                            <img src="assets/ficha2.jpg" alt="">
+                            <div class="resultText">
+                                <h2 class="coloredTitle">Titulo de ficha</h2>
+                                <p>Consec tetur adipi scing elit. Nulla scelerisque commodo mauris at sem onsectetur
+                                    adipiscing
+                                    elit.</p>
+                                <div class="seeMore">
+                                    <p>Ver ficha</p>
+                                    <img src="assets/downarrow.png" alt="">
+                                </div>
+                            </div>
+                            <div class="fichaDate">
+                                <p>Actualizada - <span>23/03/2022</span></p>
+                            </div>
+                        </a>
+                        <a href="ficha.html" class="resultSingle">
+                            <img src="assets/ficha2.jpg" alt="">
+                            <div class="resultText">
+                                <h2 class="coloredTitle">Titulo de ficha</h2>
+                                <p>Consec tetur adipi scing elit. Nulla scelerisque commodo mauris at sem onsectetur
+                                    adipiscing
+                                    elit.</p>
+                                <div class="seeMore">
+                                    <p>Ver ficha</p>
+                                    <img src="assets/downarrow.png" alt="">
+                                </div>
+                            </div>
+                            <div class="fichaDate">
+                                <p>Actualizada - <span>23/03/2022</span></p>
+                            </div>
+                        </a>
+                        <a href="ficha.html" class="resultSingle">
+                            <img src="assets/ficha2.jpg" alt="">
+                            <div class="resultText">
+                                <h2 class="coloredTitle">Titulo de ficha</h2>
+                                <p>Consec tetur adipi scing elit. Nulla scelerisque commodo mauris at sem onsectetur
+                                    adipiscing
+                                    elit.</p>
+                                <div class="seeMore">
+                                    <p>Ver ficha</p>
+                                    <img src="assets/downarrow.png" alt="">
+                                </div>
+                            </div>
+                            <div class="fichaDate">
+                                <p>Actualizada - <span>23/03/2022</span></p>
+                            </div>
+                        </a>
+                        <a href="ficha.html" class="resultSingle">
+                            <img src="assets/ficha2.jpg" alt="">
+                            <div class="resultText">
+                                <h2 class="coloredTitle">Titulo de ficha</h2>
+                                <p>Consec tetur adipi scing elit. Nulla scelerisque commodo mauris at sem onsectetur
+                                    adipiscing
+                                    elit.</p>
+                                <div class="seeMore">
+                                    <p>Ver ficha</p>
+                                    <img src="assets/downarrow.png" alt="">
+                                </div>
+                            </div>
+                            <div class="fichaDate">
+                                <p>Actualizada - <span>23/03/2022</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="pag">
+                        <div class="prev inactive">
+                            <img src="assets/prevarrow.png" alt="">
+                        </div>
+                        <div class="pages">
+                            <div class="pageSingle active">1</div>
+                            <div class="pageSingle">2</div>
+                            <div class="pageSingle">3</div>
+                            <div class="pageSingle">4</div>
+                            <div>...</div>
+                            <div class="pageSingle">10</div>
+                        </div>
+                        <div class="next active">
+                            <img src="assets/prevarrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="manifestAside">
+                    <h2>Datos de usuario</h2>
+                    <div class="manifestMenu">
+                        <a href="dashboard-usuario.html">Mis datos</a>
+                        <a href="dashboard-registrar.html">Registrar ficha</a>
+                        <a href="dashboard-fichas.html" class="active">Mis fichas</a>
+                        <a href="#">Notificaciones</a>
+                        <a href="#">Mensajes</a>
+                    </div>
+                    <a href="index.html" class="back">Regresar al inicio</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="container footer">
+        <div>
+            <a href="index.html" class="footerLogoD">
+                <picture class="footerLogo">
+                    <source media="(min-width: 1112px)" srcset="assets/siculturafooter.png">
+                    <img src="assets/statistics-icon.png" alt="statistics-icon" id>
+                </picture>
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="directorio.html">Directorio</a>
+                    </li>
+                    <li>
+                        <a href="mapa.html">Mapa</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="estadisticas.html">Estadistícas</a>
+                    </li>
+                    <li>
+                        <a href="novedades.html">Novedades</a>
+                    </li>
+                    <li>
+                        <a href="#">Mapa del sitio</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <div class="socialNet">
+                    <a href="#" target="_blank">
+                        <img src="assets/youtube.png" alt="youtube icon">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="assets/instagram.png" alt="instagram icon">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="assets/facebook.png" alt="facebook icon">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="assets/linkedin.png" alt="linkedin icon">
+                    </a>
+                </div>
+                <div class="address">
+                    <p>Ministerio de Cultura</p>
+                    <p>P.H. Tula, Edificio del Grupo Rey,</p>
+                    <p>Vía España con Vía Argentina.</p>
+                </div>
+            </div>
+        </div>
+        <div class="legal">
+            <p>© 2022 Sicultura. todos los derechos reservados</p>
+            <p>Ciudad de Panamá</p>
+        </div>
+    </footer>
+    <script src="js/global.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

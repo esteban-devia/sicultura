@@ -79,6 +79,11 @@
     font-size: 0.875rem;
     padding: 10px 8px;
     cursor: pointer;
+    color: #0844e1;
+}
+
+.manifestMenu a:visited {
+    color: #0844e1;
 }
 
 .manifestMenu a.active {

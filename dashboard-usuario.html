@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/manifest.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>SiCultura- Inicio</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerFirst">
+            <a href="#">Sobre Sicultura</a>
+            <a href="#">Definiciones</a>
+            <a href="#">Datos abiertos</a>
+            <a href="#">Contacto</a>
+        </div>
+        <div class="headerMid">
+            <div class="logos">
+                <a href="#"><img src="assets/repdomlogo.png" alt="Logo Ministerio de Cultura Rep.Dom."></a>
+                <a href="index.html"><img src="assets/siculturalogo.png" alt="Logo SiCultura"></a>
+            </div>
+            <p class="button button2 dashboardClose">Notificaciones</p>
+            <div class="sessionInfo">
+                <div class="dateInfo">
+                    <p class="infoBold">03:43:35</p>
+                    <p class="infoRegular">30/02/2022</p>
+                </div>
+                <div class="notification">
+                    <div class="notifIcon active">
+                        <img src="assets/bell.svg" alt="">
+                        <sup>2</sup>
+                    </div>
+                    <div class="notifIcon">
+                        <img src="assets/Envelope.svg" alt="">
+                        <sup>1</sup>
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="assets/photo.jpg" alt="" id="infoPhoto">
+                    <div class="userName">
+                        <p class="infoBold">Juan Pérez</p>
+                        <p class="infoRegular">Usuario</p>
+                    </div>
+                    <img src="assets/caretdown.svg" alt="">
+                    <a class="closeSession">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+        <div class="headerLast">
+            <div class="menu">
+                <div id="ham">
+                    <img src="assets/ham.png" alt="" id="ham">
+                    <p>Menú</p>
+                </div>
+                <div class="deskMenu">
+                    <a href="index.html">Inicio</a>
+                    <a href="directorio.html">Directorio</a>
+                    <a href="mapa.html">Mapa</a>
+                    <a href="estadisticas.html">Estadísticas</a>
+                    <a href="novedades.html">Novedades</a>
+                    <a href="#">Documentos</a>
+                </div>
+                <form action="" class="search">
+                    <div>
+                        <input type="search" name="searchSite" id="searchSite" placeholder="Buscar en el sitio">
+                        <button type="submit"><img src="assets/search-icon.png" alt="search-icon"></button>
+                    </div>
+                </form>
+            </div>
+            <nav class="mobileNav">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="directorio.html">Directorio</a>
+                    </li>
+                    <li>
+                        <a href="mapa.html">Mapa</a>
+                    </li>
+                    <li>
+                        <a href="estadisticas.html">Estadísticas</a>
+                    </li>
+                    <li>
+                        <a href="novedades.html">Novedades</a>
+                    </li>
+                    <li>
+                        <a href="#">Documentos</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre Sicultura</a>
+                    </li>
+                    <li>
+                        <a href="#">Definiciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Datos Abiertos</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="firstSection container">
+            <div class="dashboardMain">
+                <div class="formContainer">
+                    <form action="" class="registration dashboard">
+                        <div class="inputLine">
+                            <div class="user">
+                                <img src="assets/photo.jpg" alt="">
+                                <div class="userName">
+                                    <p class="infoBold">Juan Pérez</p>
+                                    <p class="infoRegular">Usuario</p>
+                                </div>
+                            </div>
+                            <div class="inputGroup">
+                                <label for="perfil">¿En qué perfil me identifico?</label>
+                                <div class="inputSingle">
+                                    <select name="perfil" id="perfil">
+                                        <option value="" selected hidden>
+                                        <option value="">Perfil 1</option>
+                                        <option value="">Perfil 2</option>
+                                        <option value="">Perfil 3</option>
+                                        </option>
+                                    </select>
+                                    <img src="assets/caretdown.svg" alt="" class="downSelect">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputLine">
+                            <div class="inputGroup">
+                                <label for="fname">Nombre completo</label>
+                                <div class="inputSingle">
+                                    <input type="text" name="fname" id="fname">
+                                    <img src="assets/nameIcon.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="inputGroup">
+                                <label for="nationality">Nacionalidad</label>
+                                <div class="inputSingle">
+                                    <input type="text" name="nationality" id="nationality">
+                                    <img src="assets/globeIcon.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputLine">
+                            <div class="inputGroup">
+                                <label for="country">País de residencia</label>
+                                <div class="inputSingle">
+                                    <select name="country" id="country">
+                                        <option value="" selected hidden>
+                                        <option value="">Country 1</option>
+                                        <option value="">Country 2</option>
+                                        <option value="">Country 3</option>
+                                        </option>
+                                    </select>
+                                    <img src="assets/caretdown.svg" alt="" class="downSelect">
+                                    <img src="assets/flagIcon.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="inputGroup">
+                                <label for="email">Correo electrónico</label>
+                                <div class="inputSingle">
+                                    <input type="email" name="email" id="email">
+                                    <img src="assets/Envelope.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputLine">
+                            <div class="inputGroup">
+                                <label for="gender">Género</label>
+                                <div class="inputSingle">
+                                    <select name="gender" id="gender">
+                                        <option value="" selected hidden>
+                                        <option value="">Masculino</option>
+                                        <option value="">Femenino</option>
+                                        </option>
+                                    </select>
+                                    <img src="assets/caretdown.svg" alt="" class="downSelect">
+                                    <img src="assets/genderIcon.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="inputGroup">
+                                <label for="age">Edad</label>
+                                <div class="inputSingle">
+                                    <input type="number" name="age" id="age">
+                                    <img src="assets/carnetIcon.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputLine">
+                            <div class="inputGroup">
+                                <label for="password">Contraseña</label>
+                                <div class="inputSingle">
+                                    <input type="password" name="password" id="password">
+                                    <img src="assets/lock.svg" alt="">
+                                    <img src="assets/eye.svg" alt="" class="eye">
+                                </div>
+                            </div>
+                            <div class="inputGroup">
+                                <label for="Rpassword">Repetir contraseña</label>
+                                <div class="inputSingle">
+                                    <input type="password" name="Rpassword" id="Rpassword">
+                                    <img src="assets/lock.svg" alt="">
+                                    <img src="assets/eye.svg" alt="" class="eye">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sessionButtons">
+                            <button type="submit" class="deleteAccount">Eliminar mi cuenta</button>
+                            <button type="submit" class="button button2">Actualizar datos</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="manifestAside">
+                    <h2>Datos de usuario</h2>
+                    <div class="manifestMenu">
+                        <a href="dashboard-usuario.html" class="active">Mis datos</a>
+                        <a href="dashboard-registrar.html">Registrar ficha</a>
+                        <a href="dashboard-fichas.html">Mis fichas</a>
+                        <a href="#">Notificaciones</a>
+                        <a href="#">Mensajes</a>
+                    </div>
+                    <a href="index.html" class="back">Regresar al inicio</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="container footer">
+        <div>
+            <a href="index.html" class="footerLogoD">
+                <picture class="footerLogo">
+                    <source media="(min-width: 1112px)" srcset="assets/siculturafooter.png">
+                    <img src="assets/statistics-icon.png" alt="statistics-icon" id>
+                </picture>
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="directorio.html">Directorio</a>
+                    </li>
+                    <li>
+                        <a href="mapa.html">Mapa</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="estadisticas.html">Estadistícas</a>
+                    </li>
+                    <li>
+                        <a href="novedades.html">Novedades</a>
+                    </li>
+                    <li>
+                        <a href="#">Mapa del sitio</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <div class="socialNet">
+                    <a href="#" target="_blank">
+                        <img src="assets/youtube.png" alt="youtube icon">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="assets/instagram.png" alt="instagram icon">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="assets/facebook.png" alt="facebook icon">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="assets/linkedin.png" alt="linkedin icon">
+                    </a>
+                </div>
+                <div class="address">
+                    <p>Ministerio de Cultura</p>
+                    <p>P.H. Tula, Edificio del Grupo Rey,</p>
+                    <p>Vía España con Vía Argentina.</p>
+                </div>
+            </div>
+        </div>
+        <div class="legal">
+            <p>© 2022 Sicultura. todos los derechos reservados</p>
+            <p>Ciudad de Panamá</p>
+        </div>
+    </footer>
+    <script src="js/global.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

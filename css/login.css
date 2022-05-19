@@ -83,7 +83,7 @@ input[type=number] {
     padding-top: 0.5rem;
 }
 
-.inputGroup .inputSingle img#eye,
+.inputGroup .inputSingle img.eye,
 .inputGroup .inputSingle img.downSelect {
     right: 0.7rem;
     left: auto;
@@ -234,7 +234,7 @@ input[type=number] {
         left: 1rem;
     }
 
-    .inputGroup .inputSingle img#eye {
+    .inputGroup .inputSingle img.eye {
         right: 1rem;
     }
 
