@@ -145,11 +145,150 @@
     text-transform: uppercase;
     color: #ff0000;
 }
+.registerFichaTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.registerFichaForm.dashboardMain {
+    margin-top: 2rem;
+}
+.registerFichaForm .formContainer h3 {
+    font-family: "Oswald-Bold";
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    text-align: left;
+}
+.registerFichaForm.dashboardMain .registration.dashboard {
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0;
+    width: 100%;
+}
+.registerFichaTitle p {
+    font-family: "WSans-Regular";
+    font-size: 0.875rem;
+}
+.stepGroup {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.stepRow {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.25rem;
+}
+.step {
+    width: 50%;
+    border-radius: 7px;
+    border: 1px solid #d4d4d4;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.step:last-child::before {
+    content: "";
+    width: 2rem;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    left:-1rem;
+    border: transparent;
+    border-top: 1px solid #c0c0c0;
+}
+.step p {
+    color: #d4d4d4;
+}
+.step.finished {
+    display: flex;
+    background-color: #00b8ab;
 
+}
+.step.finished {
+    color: #FFF;
+    border: none;
+}
+.step.finished:last-child::before {
+    content: "";
+    width: 2rem;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    left:-1rem;
+    border: transparent;
+    border-top: 1px solid #00b8ab;
+}
+.step.step.finished p {
+    color: #FFF;
+}
+.step.current {
+    box-shadow: 0px 1px 7px 0px rgb(112 112 112 / 27%);
+    border: none;
+    color: #4e4f5d;
+}
+.step.current p {
+    color: #707070;
+}
+
+.inputCol {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.inputLabel {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Oswald-Regular';
+    font-size: 0.875rem;
+    color: #0944e1;
+    padding: 0 0.5rem 0 0.2rem;
+}
+.inputCol .inputSingle input {
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    padding-left: 2.2rem;
+    font-family: 'WSans-Regular';
+    font-size: 0.875rem;
+    color: #4e4f5d;
+    box-shadow: 0 0 11px -1px rgb(112 112 112 / 27%);
+    border: none;
+    border-radius: 7px;
+    margin-top: 0.5rem;
+}
+.registerFichaButtons {
+    display: flex;
+    justify-content: space-between;
+}
+.registerFichaButtons .sessionButtons {
+    flex-direction: row;
+}
+.registerFichaButtons .sessionButtons button.button5 {
+    text-transform: capitalize;
+}
+
+@media screen and (min-width: 420px) {
+    .registerFichaButtons .sessionButtons button {
+        padding: 0.5rem 1rem;
+    }
+}
 
 @media screen and (min-width: 520px) {
     .registration.dashboard .inputGroup {
         display: block;
+    }
+    .registerFichaForm.dashboardMain .formContainer {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .dashboardClose, .dashboardMain .searchSection a#filterSearch {
+        font-size: 0.75rem;
     }
 }
 
@@ -161,16 +300,17 @@
     .dashboardMain {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: flex-end;
-        gap: 4rem;
+        justify-content: center;
+        gap: 1rem;
     }
 
     .dashboardMain .searchSection {
         padding-top: 0;
+        width: 65%;
     }
 
     .inputLine .user {
-        width: 50%;
+        width: 45%;
     }
 
     .registration.dashboard .inputGroup .inputSingle input {
@@ -178,20 +318,41 @@
     }
 
     .dashboardMain .formContainer {
-        width: 100%;
+        width: 65%;
     }
-
+    .registration.dashboard {
+        width: -webkit-fill-available;
+    }
     .registration.dashboard .inputGroup {
         flex-direction: column;
         align-items: inherit;
         gap: 0;
-        width: 50%;
+        width: 45%;
         margin: 0;
     }
 
     .inputLine {
         flex-direction: row;
         align-items: flex-end;
+        justify-content: space-between;
+    }
+    .dashboardMain .manifestAside {
+        width: 25%;
+    }
+    .dashboardMain .manifestAside h2 {
+        font-size: 1.5rem;
+    }
+    .registerFichaForm.dashboardMain .formContainer {
+        width: 100%;
+        display: block;
+    }
+    .inputColGroup {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .inputCol {
+        width: 50%;
     }
 }
 
@@ -236,4 +397,65 @@
     .deleteAccount {
         text-align: left;
     }
+}
+
+@media screen and (min-width:1112px) {
+    .registerFichaForm.dashboardMain .registration.dashboard {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .registerFichaForm.dashboardMain .registration.dashboard > img {
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+    }
+    .stepGroup {
+        flex-direction: row;
+        gap: 1rem;
+        width: 100%;
+    }
+    .stepRow {
+        gap: 1rem;
+        width: 50%;
+    }
+    .step.finished::before {
+        content: "";
+        width: 1rem;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%);
+        left: -0.5rem;
+        border: transparent;
+        border-top: 1px solid #00b8ab;
+    }
+    .step::after {
+        content: "";
+        width: 1rem;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%);
+        right: -1.5rem;
+        border: transparent;
+        border-top: 1px solid #c0c0c0;
+    }
+    .step:last-child::before, .step:last-child::after {
+        content: none;
+    }
+    .step.finished::after {
+        content: "";
+        width: 1rem;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%);
+        right: -1.5rem;
+        border: transparent;
+        border-top: 1px solid #00b8ab;
+    }
+    .step.finished:first-child::before{
+        content: none;
+    }
+
 }
