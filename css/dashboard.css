@@ -400,14 +400,27 @@
 }
 
 @media screen and (min-width:1112px) {
+    .dashboardMain {
+        justify-content: space-between;
+        gap: 3rem;
+    }
+    .registerFicha {
+        width: 100%;
+    }
     .registerFichaForm.dashboardMain .registration.dashboard {
         flex-direction: row;
         align-items: flex-start;
+        justify-content: space-between;
+        gap: 2rem;
     }
+    
     .registerFichaForm.dashboardMain .registration.dashboard > img {
         width: 15rem;
         height: 15rem;
         object-fit: cover;
+    }
+    .inputColGroup {
+        width: 100%;
     }
     .stepGroup {
         flex-direction: row;
