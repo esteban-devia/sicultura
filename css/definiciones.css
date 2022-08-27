@@ -1,0 +1,146 @@
+.definitions h1, .manual h2 {
+    color: #e20029;
+    font-size: 4.187rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+.definitions h2 {
+    color: #1224a2;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Oswald-Regular';
+    font-weight: 400;
+}
+.definitions h3 {
+    color: #e20029;
+    text-align: center;
+    font-size: 0.875rem;
+    font-family: 'Oswald-Regular';
+}
+
+.def-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 4.5rem auto 4.25rem;
+    max-width: 1100px;
+}
+.def-card {
+    width: 7.5rem;
+    height: 8.5rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 9px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    perspective: 1000px;
+}
+.def-card img {
+    max-width: 95px;
+}
+.manual-text {
+    font-family: "WSans-Regular";
+    font-size: 1.25rem;
+    color: #000000;
+    font-weight: 400;
+    margin-left: 16rem;
+    margin-bottom: 12rem;
+}
+.more-def  { 
+    display: none;
+    padding: 1rem;
+    border-radius: 9px;
+    height: 8.5rem;
+}
+.more-def p, .flip-card-back p {
+    font-family: "WSans-Regular";
+    font-size: 0.875rem;
+    color: #000000;
+    font-weight: 400;
+}
+.more-def a, .flip-card-back a {
+    font-family: "WSans-Regular";
+    text-decoration: underline;
+    color: #e20029;
+    margin-top: 0.5rem;
+}
+.def-card:hover .more-def {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f9f9f9;
+}
+.flip-card {
+    background-color: #f9f9f9;
+    width: 7.5rem;
+    height: 8.5rem;
+    perspective: 1000px;
+    border-radius: 9px;
+    padding: 1rem;
+  }
+.flip-card-inner {
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  height: 100%;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  padding: 0 1rem;  
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+  padding: 0;
+  text-align: center;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.article-def .article-card {
+    text-align: center;
+    width: 166px;
+    height: auto;
+    margin: auto;
+    background-color: transparent;
+}
+.article-card h1 {
+    font-family: "Oswald-Regular";
+    font-size: 1.5625rem;
+    color: #e20029;
+    margin-top: -1.5rem;
+}
+.article-def .article {
+    font-family: "WSans-regular";
+    font-weight: 400;
+    color: #000000;
+    margin-top: 2.75rem;
+}
+@media screen and (max-width: 1024px) {
+    .manual-text {
+        margin-left: 8rem;
+    }
+}
+@media screen and (max-width: 680px) {
+    .definitions h1, .manual h2 {
+        font-size: 3.187rem;
+    }
+    .manual-text {
+        margin-left: 0;
+        margin-bottom: 6rem;
+    }
+}
