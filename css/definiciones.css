@@ -41,13 +41,18 @@
 .def-card img {
     max-width: 95px;
 }
+.manual-portada {
+    display: flex;
+    gap: 3.5rem;
+}
+.manual-portada img {
+    max-width: 215px;
+}
 .manual-text {
     font-family: "WSans-Regular";
     font-size: 1.25rem;
     color: #000000;
     font-weight: 400;
-    margin-left: 16rem;
-    margin-bottom: 12rem;
 }
 .more-def  { 
     display: none;
@@ -130,9 +135,10 @@
     color: #000000;
     margin-top: 2.75rem;
 }
-@media screen and (max-width: 1024px) {
-    .manual-text {
-        margin-left: 8rem;
+@media screen and (max-width: 760px) {
+    .manual-portada {
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media screen and (max-width: 680px) {
@@ -140,7 +146,6 @@
         font-size: 3.187rem;
     }
     .manual-text {
-        margin-left: 0;
         margin-bottom: 6rem;
     }
 }
