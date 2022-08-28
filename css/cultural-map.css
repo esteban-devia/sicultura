@@ -1,0 +1,68 @@
+.cultural-map h1 {
+    color: #e20029;
+    font-size: 4.187rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+.cultural-map > a {
+    text-decoration: none;
+    font-family: "WSans-Medium";
+    font-size: 0.875rem;
+    color: #fff;
+    padding: 0.4rem 1.3rem;
+    background-color: #ea0029;
+    border-radius: 20px 20px 20px 0;
+    border: none;
+    cursor: pointer;
+}
+.cultural-map-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+.cultural-map-content p {
+    font-family: "WSans-Regular";
+    font-size: 1.25rem;
+    color: #000000;
+    font-weight: 400;
+    width: 50%;
+}
+.cultural-alies {
+    width: 50%;
+}
+.cultural-alies h2 {
+    color: #1224a2;
+    font-size: 2rem;
+    font-family: 'Oswald-Regular';
+    font-weight: 400;
+}
+.cultural-alies-logos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.cultural-alies-logos img{
+    width: 200px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .cultural-map-content {
+        flex-direction: column;
+    }
+    .cultural-map-content p, .cultural-alies {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 680px) {
+    .cultural-map h1 {
+        font-size: 3.187rem;
+    }
+}
+@media screen and (max-width: 455px) {
+    .cultural-alies-logos {
+        justify-content: center;
+    }
+}
