@@ -1,5 +1,6 @@
 .cultural-map h1 {
     color: #e20029;
+    font-family: "Oswald-Regular";
     font-size: 4.187rem;
     font-weight: 400;
     margin-bottom: 3rem;
@@ -14,12 +15,17 @@
     border-radius: 20px 20px 20px 0;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
 }
 .cultural-map-content {
     display: flex;
     justify-content: space-between;
     gap: 4rem;
     margin-top: 4rem;
+    margin-bottom: 6rem;
 }
 .cultural-map-content p {
     font-family: "WSans-Regular";
@@ -28,20 +34,29 @@
     font-weight: 400;
     width: 50%;
 }
-.cultural-alies {
+.right-side {
     width: 50%;
 }
-.cultural-alies h2 {
-    color: #1224a2;
-    font-size: 2rem;
-    font-family: 'Oswald-Regular';
-    font-weight: 400;
+.right-side .single-video {
+    width: 100%;
+    max-width: 493px;
+    margin-bottom: 2rem;
+}
+.right-side .single-video  img {
+    width: 100%;
+    object-fit: cover;
 }
 .cultural-alies-logos {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
+}
+.cultural-alies h2 {
+    color: #1224a2;
+    font-size: 2rem;
+    font-family: 'Oswald-Regular';
+    font-weight: 400;
 }
 .cultural-alies-logos img{
     width: 200px;
@@ -52,8 +67,11 @@
     .cultural-map-content {
         flex-direction: column;
     }
-    .cultural-map-content p, .cultural-alies {
+    .cultural-map-content p, .right-side {
         width: 100%;
+    }
+    .right-side .single-video {
+        margin: 0 auto 2rem;
     }
 }
 @media screen and (max-width: 680px) {
@@ -62,7 +80,7 @@
     }
 }
 @media screen and (max-width: 455px) {
-    .cultural-alies-logos {
+    .right-side-logos {
         justify-content: center;
     }
 }
